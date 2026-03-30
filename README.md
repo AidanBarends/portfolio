@@ -142,3 +142,7 @@ I'm always open to opportunities, collaborations, and growing as a developer.
 Feel free to reach out!
 
 ---
+
+## 🎥 Mock Interview
+
+Watch my mock interview here: https://youtu.be/3GxY9a-963M
