@@ -120,13 +120,13 @@ Collaborated using **Figma** to redesign a public transport app with improved UI
 
 ---
 
-##  Certifications
+## Certifications
 
 - 4IR Digital Skills Training Programme  
 
 ---
 
-##  Contact Me
+## Contact Me
 
 - Personal Email: aidanbarends95@gmail.com  
 - Student Email: 230255639@mycput.ac.za  
@@ -143,6 +143,6 @@ Feel free to reach out!
 
 ---
 
-## 🎥 Mock Interview
+## Mock Interview
 
 Watch my mock interview here: https://youtu.be/3GxY9a-963M
