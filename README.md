@@ -145,4 +145,9 @@ Feel free to reach out!
 
 ## Mock Interview
 
+<video width="720" controls>
+  <source src="Video%20interview%20%282%29.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 Watch my mock interview here: https://youtu.be/3GxY9a-963M
