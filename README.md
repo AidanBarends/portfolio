@@ -1,22 +1,22 @@
-# 👨‍💻 Aidan Barends — Aspiring Full-Stack Developer
+# Aidan Barends — Aspiring Full-Stack Developer
 
 ---
 
-## 🚀 About Me
+## About Me
 
 Hi, I'm **Aidan Barends**, an IT student specializing in **Application Development** with a strong foundation in software engineering, networking, and web development.
 
 I have hands-on experience building responsive web applications, Java-based systems, and working with real-world networking environments. I'm passionate about **cybersecurity, problem-solving, and building practical solutions** that make an impact.
 
-- 🎯 Goal: Become a skilled **Full-Stack Developer** with a focus on secure and scalable systems  
-- 💡 Interests: Web Development, Cybersecurity, Networking, System Design  
-- 📚 Currently Learning: React, Laravel, PHP (Full-Stack Development)
+-  Goal: Become a skilled **Full-Stack Developer** with a focus on secure and scalable systems  
+-  Interests: Web Development, Cybersecurity, Networking, System Design  
+-  Currently Learning: React, Laravel, PHP (Full-Stack Development)
 
 ---
 
-## 🛠️ Skills
+##  Skills
 
-### 💻 Technical Skills
+###  Technical Skills
 
 - **Frontend:** HTML, CSS, JavaScript  
 - **Backend:** PHP, Java, Python  
@@ -38,59 +38,59 @@ I have hands-on experience building responsive web applications, Java-based syst
 
 ---
 
-## 📂 Projects
+##  Projects
 
-### 🔹 Portfolio Website  
+### Portfolio Website  
 Built a responsive personal portfolio using **HTML, CSS, and JavaScript** to showcase skills and projects.
 
 ---
 
-### 🔹 NGO Website  
+### NGO Website  
 Developed a website for a non-profit organization with a focus on **responsive design and usability**.
 
 ---
 
-### 🔹 Restaurant Website (Die Strandloper)  
+### Restaurant Website (Die Strandloper)  
 Created a fully functional website for a local restaurant using **HTML, CSS, and JavaScript**.
 
 ---
 
-### 🔹 Liron School of Arts Website  
+### Liron School of Arts Website  
 Built and deployed a working website integrated with **MyMusicStaff** for real-world use.
 
 ---
 
-### 🔹 Student Timetable Manager App  
+### Student Timetable Manager App  
 Developed a **Java desktop application** with CRUD functionality and database integration.
 
 ---
 
-### 🔹 Student/Course Enrolment System  
+### Student/Course Enrolment System  
 Built a system with **authentication, database integration, and CRUD operations** using Java and Derby.
 
 ---
 
-### 🔹 MyCiti App Redesign (Team Project)  
+### MyCiti App Redesign (Team Project)  
 Collaborated using **Figma** to redesign a public transport app with improved UI/UX.
 
 ---
 
-## 🎓 Education
+## Education
 
 **Diploma in ICT: Application Development**  
 *Cape Peninsula University of Technology (CPUT)*  
-📅 2024 — Present  
+ 2024 — Present  
 
 **National Senior Certificate (NSC)**  
 *Hopefield High School*  
-📅 2018 — 2022  
+ 2018 — 2022  
 
 ---
 
-## 💼 Experience
+## Experience
 
 ### **IT Intern — Craythorne IT**  
-📅 Aug 2025 — Jan 2026  
+ Aug 2025 — Jan 2026  
 
 - Assisted with router configuration and network installations  
 - Performed network troubleshooting and connectivity testing  
@@ -109,7 +109,7 @@ Collaborated using **Figma** to redesign a public transport app with improved UI
 
 ---
 
-## 🧠 Soft Skills
+## Soft Skills
 
 - Problem-solving  
 - Team collaboration  
@@ -120,23 +120,23 @@ Collaborated using **Figma** to redesign a public transport app with improved UI
 
 ---
 
-## 📜 Certifications
+##  Certifications
 
 - 4IR Digital Skills Training Programme  
 
 ---
 
-## 📫 Contact Me
+##  Contact Me
 
-- 📧 Personal Email: aidanbarends95@gmail.com  
-- 📧 Student Email: 230255639@mycput.ac.za  
-- 💻 GitHub: https://github.com/AidanBarends  
-- 💼 LinkedIn: https://www.linkedin.com/in/aidan-barends/  
-- 📱 Phone: +27 71 680 8399  
+- Personal Email: aidanbarends95@gmail.com  
+- Student Email: 230255639@mycput.ac.za  
+- GitHub: https://github.com/AidanBarends  
+- LinkedIn: https://www.linkedin.com/in/aidan-barends/  
+- Phone: +27 71 680 8399  
 
 ---
 
-## ✨ Let's Connect!
+## Let's Connect!
 
 I'm always open to opportunities, collaborations, and growing as a developer.  
 Feel free to reach out!
