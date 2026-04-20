@@ -4,11 +4,11 @@
 
 ## About Me
 
-Hi, I'm **Aidan Barends**, an IT student specializing in **Application Development** at CPUT.
+Hi, I'm Aidan Barends, an IT student specializing in Application Development at CPUT.
 
-This portfolio showcases my **technical skills, work experience, and development as a student**, highlighting my readiness to enter the IT industry.
+This portfolio showcases my technical skills, work experience, and development as a student, highlighting my readiness to enter the IT industry.
 
-- Goal: Become a skilled **Full-Stack Developer** focused on secure and scalable systems  
+- Goal: Become a skilled Full-Stack Developer focused on secure and scalable systems  
 - Interests: Web Development, Cybersecurity, Networking  
 - Currently Learning: React, Laravel, PHP  
 
@@ -134,12 +134,12 @@ I successfully deployed my portfolio and gained practical experience in hosting 
 
 This portfolio brings together my **technical skills, practical projects, and personal development**.
 
-- My **CV** shows my background and experience  
-- My **projects** demonstrate my technical ability  
-- My **mock interview** highlights my communication skills  
-- My **reflections** show my growth and readiness for the industry  
+- My CV shows my background and experience  
+- My projects demonstrate my technical ability  
+- My mock interview highlights my communication skills  
+- My reflections show my growth and readiness for the industry  
 
-Together, these elements demonstrate my journey as a student becoming a **job-ready developer**.
+Together, these elements demonstrate my journey as a student becoming a ob-ready developer.
 
 ---
 
