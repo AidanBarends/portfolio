@@ -139,7 +139,7 @@ This portfolio brings together my **technical skills, practical projects, and pe
 - My mock interview highlights my communication skills  
 - My reflections show my growth and readiness for the industry  
 
-Together, these elements demonstrate my journey as a student becoming a ob-ready developer.
+Together, these elements demonstrate my journey as a student becoming a job-ready developer.
 
 ---
 
