@@ -435,16 +435,18 @@ An Agile logbook records stand-ups, sprint plans and retrospectives so a team ca
 <details markdown="1">
 <summary><code>Week 3 · 27 to 31 Jul</code> Figma prototype</summary>
 
-- **Done (team):** Figma prototype presented to the lecturer (29 Jul).
-- **Next:** set up the React project.
+- **Done (team):** Figma prototype presented to the lecturer (29 Jul). Every member designed part of it.
+- **My part:** in charge of the card prototype in Figma.
+- **Next:** set up the React project and start coding the screens.
 - **Evidence:** Charter milestones.
 </details>
 
 <details markdown="1">
 <summary><code>Week 4 · 3 to 7 Aug</code> React set-up</summary>
 
-- **Done (team):** React project set up (4 Aug).
-- **Evidence:** Charter milestones; Trello *Sprint 1: Project Setup and Planning* card moved to In Progress.
+- **Done (team):** React project set up (4 Aug); first frontend work split between us using the commuter navigation bar from our wireframes.
+- **My part:** coded the card screens from my Figma prototype.
+- **Evidence:** Charter section 2 and milestones; Trello *Sprint 1: Project Setup and Planning* card moved to In Progress.
 </details>
 
 <details markdown="1">
@@ -478,7 +480,7 @@ An Agile logbook records stand-ups, sprint plans and retrospectives so a team ca
 <details markdown="1">
 <summary><code>Week 8 · 22 to 25 Sep</code> Merging my work</summary>
 
-- **Done:** my work merged again through pull request #8 (24 Sep). Team added email verification, card linking, wallet and password reset.
+- **Done:** mostly bug fixing and testing, then my work merged again through pull request #8 (24 Sep). Team added email verification, card linking, wallet and password reset.
 - **Evidence:** merge commit for pull request #8; Charter milestones.
 </details>
 
@@ -493,7 +495,7 @@ An Agile logbook records stand-ups, sprint plans and retrospectives so a team ca
 <summary><code>Week 10 · 19 to 23 Oct</code> Feature freeze and presentation prep</summary>
 
 - **Done (team):** code review fixes, feature freeze declared (20 Oct), charter updated to v2.0.
-- **Done (team, me included):** prepared the presentation of GoldenWay for our lecturer.
+- **Done (team, me included):** prepared our GoldenWay presentation for the lecturer. My part was the Business Model Canvas section.
 - **Next:** present to the lecturer and submit individual portfolios.
 - **Evidence:** Charter revision history and milestones.
 </details>
@@ -501,7 +503,7 @@ An Agile logbook records stand-ups, sprint plans and retrospectives so a team ca
 <details markdown="1">
 <summary><code>Week 11 · 26 to 30 Oct</code> Presenting to our lecturer</summary>
 
-- **Planned:** present GoldenWay to our lecturer this week; individual portfolios due 27 Oct.
+- **Planned:** present GoldenWay to our lecturer this week, where I present the Business Model Canvas section; individual portfolios due 27 Oct.
 - **Evidence:** Charter milestones.
 </details>
 
@@ -519,7 +521,7 @@ An Agile logbook records stand-ups, sprint plans and retrospectives so a team ca
 
 ### What tracking progress taught me
 
-Looking back over the logbook, the weeks are not equal. Weeks 1 to 6 are mostly team milestones, and almost all of my own development work sits in Week 7. That pattern is useful: it shows my effort was concentrated around the demo rather than spread across the sprints, which is exactly what made Week 7 run over. A logbook makes that visible in a way that memory does not.
+Looking back over the logbook, my part changed a lot over the project. It started with design (the card prototype in Figma), moved to coding that prototype in React, then to the Driver role, then to testing, and ended with the Business Model Canvas for our presentation. Seeing it week by week also shows where my effort bunched up: most of my Driver code landed in Week 7, right before the demo, which is why that sprint ran over.
 
 Tracking also shows the difference between **what** happened and **why**. Git and Trello record what I did and when, but the blocker in Week 7, that the driver side took longer because it had to talk to the admin and commuter sides, only shows up because I wrote it down. That is the kind of information a stand-up is meant to surface early, so the team can adjust before the deadline instead of after it.
 
