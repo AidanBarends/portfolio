@@ -46,7 +46,7 @@
     }
   });
 
-  // Route rail: highlight the stop currently on screen
+  // Route rail: mark the stop on screen as current and the ones before it as passed
   var links = document.querySelectorAll('.route__line a');
   if (links.length && 'IntersectionObserver' in window) {
     var byId = {};
@@ -54,9 +54,13 @@
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (!entry.isIntersecting) return;
-        links.forEach(function (a) { a.classList.remove('is-active'); });
-        var link = byId[entry.target.id];
-        if (link) link.classList.add('is-active');
+        var current = byId[entry.target.id], passed = true;
+        if (!current) return;
+        links.forEach(function (a) {
+          if (a === current) passed = false;
+          a.classList.toggle('is-current', a === current);
+          a.classList.toggle('is-passed', passed);
+        });
       });
     }, { rootMargin: '-30% 0px -60% 0px' });
     Object.keys(byId).forEach(function (id) {

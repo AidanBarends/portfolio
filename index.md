@@ -11,7 +11,7 @@ description: Digital portfolio of Aidan Barends, Application Development student
     <p class="lead">I'm an IT student specialising in Application Development at the Cape Peninsula University of Technology. My goal is to become a skilled full-stack developer focused on secure and scalable systems. This year I built the Driver role for GoldenWay, our team's transit app for Golden Arrow commuters.</p>
     <div class="actions">
       <a class="btn" href="agile.html">{% include icon.html name="agile" %}See my Agile eWIL work</a>
-      <a class="btn btn--ghost" href="cv.html">{% include icon.html name="cv" %}View my CV</a>
+      <a class="btn btn--ghost" href="assets/docs/Aidan_Barends_CV.pdf">{% include icon.html name="download" %}View my CV (PDF)</a>
     </div>
   </div>
   <aside class="term" aria-label="At a glance">
