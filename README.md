@@ -1,7 +1,3 @@
----
-title: Home
----
-
 # Aidan Barends — Digital Portfolio
 
 ---

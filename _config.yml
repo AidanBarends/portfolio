@@ -1,6 +1,6 @@
 # Site settings for GitHub Pages (Jekyll)
 title: Aidan Barends
-description: Digital portfolio and Agile e-portfolio of Aidan Barends, Application Development student at CPUT.
+description: Digital portfolio of Aidan Barends, Application Development student at CPUT.
 author: Aidan Barends
 baseurl: "/portfolio"
 url: "https://aidanbarends.github.io"
@@ -11,13 +11,15 @@ kramdown:
   input: GFM
   hard_wrap: false
 
-# Every Markdown page uses _layouts/default.html unless it says otherwise
+# Every page uses _layouts/default.html unless it says otherwise
 defaults:
   - scope:
       path: ""
     values:
       layout: default
 
-# Keep the big video file out of the site build
+# index.md is the homepage now, so the README stays a GitHub-only file.
+# The video is embedded from YouTube, so the big local copy is not needed on the site.
 exclude:
+  - README.md
   - "Video interview (2).mp4"

@@ -1,74 +1,117 @@
 ---
-title: Agile e-Portfolio
+title: Agile eWIL
+nav: agile
 description: Agile e-portfolio for PRP370 (Project Presentation 3), built around my Driver role on the GoldenWay project.
 ---
 
-<p class="prompt">~/aidan/agile $ cat goldenway.md</p>
+<span class="eyebrow">PRP370S · Project Presentation 3 · Assessment 2</span>
 
-# Agile e-Portfolio: GoldenWay
+# Agile eWIL: <em>driving</em> GoldenWay
 
-GoldenWay is a web app our team (Group 26) built for Golden Arrow commuters to buy and load Gold Card trips online, with tools for five staff roles. I was a **developer on the Driver role**, and in July I **set up our first Trello product backlog**. This page shows the five Agile artefacts, my evidence for each, and what I learned.
+GoldenWay is a web app our team (Group 26) built so Golden Arrow commuters can buy and load Gold Card trips online, with tools for five staff roles. I was the **developer on the Driver role**, and in July I was **in charge of our first Trello board and product backlog**. This page follows the route through the five Agile artefacts. Each stop shows the evidence first, then my reflection on it.
 {: .lead}
 
-| Item | Detail |
-|---|---|
-| **Team** | Group 26: Joshua Adams (Team Lead), Matthew Barron, Aidan Barends, Joshua Bird, Raul Everts |
-| **My role** | Developer, Driver role (starting runs, delay reporting, run timelines, on-time tracking) |
-| **Also** | Structured the original Trello board and product backlog (July 2026) |
-| **My branch** | `AB-230255639` in the [GoldenWay repository](https://github.com/aidan-g-barends/GoldenWayApp) |
-| **Trello** | [Board v1 (I set it up)](https://trello.com/b/fMkfGDiw/goldenway-board) and [Board v2 (run by our Team Lead)](https://trello.com/b/xyZiSfZl/goldenway-board-updated) |
-
-<div class="jump">
-  <a href="#charter"><b>01</b><span>Team Charter</span></a>
-  <a href="#stories"><b>02</b><span>User Stories &amp; Tasks</span></a>
-  <a href="#product-backlog"><b>03</b><span>Product Backlog</span></a>
-  <a href="#sprint-backlog"><b>04</b><span>Sprint Backlog</span></a>
-  <a href="#logbook"><b>05</b><span>Agile Logbook</span></a>
+<div class="facts">
+  <div class="fact"><b>3</b><span>Driver user stories delivered</span></div>
+  <div class="fact"><b>10</b><span>commits under my name</span></div>
+  <div class="fact"><b>6</b><span>database migrations I wrote</span></div>
+  <div class="fact"><b>4</b><span>pull request merges of my branch</span></div>
+  <div class="fact"><b>1</b><span>security hole found and fixed</span></div>
 </div>
 
-Each section has an **Evidence** panel (blue) and a **Reflection** panel (green). Team artefacts are marked as team work, and only the work linked to my name is claimed as mine.
+<div class="actions">
+  <a class="btn" href="https://trello.com/b/fMkfGDiw/goldenway-board">Open Trello Board v1</a>
+  <a class="btn btn--ghost" href="https://github.com/aidan-g-barends/GoldenWayApp">GoldenWay repository</a>
+</div>
 
----
+<nav class="route" aria-label="Artefacts on this page">
+  <div class="route__label"><span>Route: charter to logbook</span><span>5 stops</span></div>
+  <div class="route__line">
+    <a href="#charter"><i></i>Team Charter</a>
+    <a href="#stories"><i></i>User Stories</a>
+    <a href="#product-backlog"><i></i>Product Backlog</a>
+    <a href="#sprint-backlog"><i></i>Sprint Backlog</a>
+    <a href="#logbook"><i></i>Logbook</a>
+  </div>
+</nav>
 
-<p class="eyebrow">01 / Agile Team Charter</p>
+<!-- =================================================================== -->
+<section class="stop" id="charter" markdown="1">
 
-## Agile Team Charter {#charter}
+<div class="stop__head">
+  <span class="stop__num">1</span>
+  <div>
+    <h2>Agile Team Charter</h2>
+    <p>Our team agreement: purpose, values, working agreements and boundaries. Version 1.0 was written in May 2026 and updated to version 2.0 on 20 October 2026 after the team changed.</p>
+  </div>
+</div>
 
-An Agile team charter is a living, co-created agreement that sets out a team's purpose, values, working agreements and boundaries (CPUT, 2026). Ours started as version 1.0 in May 2026 and was updated to version 2.0 on 20 October 2026 after the team changed (Group 26, 2026).
+<div data-tabs markdown="1">
+<div class="tabs" role="tablist">
+  <button type="button" role="tab" aria-selected="true" aria-controls="charter-ev">Evidence</button>
+  <button type="button" role="tab" aria-selected="false" aria-controls="charter-re">Reflection</button>
+</div>
 
-<div class="evidence" markdown="1">
+<div class="panel" id="charter-ev" role="tabpanel" markdown="1">
 
-### The charter and what it covers
+An Agile team charter is a living, co-created agreement that sets out a team's purpose, values, working agreements and boundaries (CPUT, 2026). Ours is a team artefact (Group 26, 2026). <span class="tag team">Team artefact</span>
 
-**Document:** [Agile Team Charter v2.0 (PDF)](assets/docs/Agile_Team_Charter_v2.0.pdf) <span class="tag team">Team artefact</span>
+<div class="cols" markdown="1">
+<div markdown="1">
 
-| Charter element | What our charter says |
+#### Roles and ownership
+
+| Member | Role |
+|---|---|
+| Joshua Adams | Team Lead · Commuter and Clerk |
+| Matthew Barron | Admin |
+| **Aidan Barends (me)** | **Driver: starting runs, delay reporting, run timelines, on-time tracking** |
+| Joshua Bird | Inspector |
+| Raul Everts | Agent |
+
+</div>
+<div markdown="1">
+
+#### Working agreements
+
+- One-week sprints: planning on Tuesday, retro at the end of the week
+- Stand-ups on class days: done, next, blockers
+- One branch per member (mine: `AB-230255639`), no direct pushes to `main`
+- Business rules live in database functions; **every table has row-level security**
+- Disagreements: talk to the person first, then stand-up, then Team Lead, then lecturer
+
+</div>
+</div>
+
+#### What the charter covers
+
+| Element | What our charter says |
 |---|---|
 | Purpose | Stop commuters losing time in ticket queues by letting them load Gold Card trips online |
-| Vision | "No one misses their bus": cashless, convenient transit payments for Cape Town commuters and students |
-| Roles | Work split by app role on 11 August. **Mine: Developer, Driver** (starting runs, delay reporting, run timelines, on-time tracking) |
 | Values | Ubuntu, respect, transparency, accountability, ethical capability, continuous improvement |
-| Working agreements | Stand-ups on class days, one-week sprints, planning on Tuesday, retro at the end of the week |
-| Code rules | One branch per member named with initials and student number, no direct pushes to `main`, every merge goes through a pull request |
-| Database rules | Business rules live in database functions; **every table has row-level security (RLS)** |
 | Decisions | Role owners decide inside their role; cross-role decisions by consensus at planning; Team Lead breaks ties |
-| Conflict | Speak to the person first, then raise it at stand-up, then the Team Lead, then the lecturer |
 | Boundaries | Simulated payments only, no full card numbers, no NFC hardware, feature freeze from 20 October |
 | Definition of Done | Works on the real database, lint and tests pass, PR reviewed and merged, checked on mobile, Trello card and logbook updated |
 
-**History on Trello:** on [Board v1](https://trello.com/b/fMkfGDiw/goldenway-board), the charter was planned in a team meeting (card due 29 April 2026) and version 1.0 was due on 4 May 2026, with sections split between members.
-
-### Where the charter shows up in my own work
+#### Where the charter shows up in my own work
 
 | Charter rule | My evidence |
 |---|---|
-| Own branch, named by convention | My branch `AB-230255639` was merged into `main` through pull requests on 17 Sep, 24 Sep and 1 Oct 2026 |
-| Every table has RLS; ethical capability | I found and fixed a security hole in the driver's `vehicle_runs` table ([commit 488e060](https://github.com/aidan-g-barends/GoldenWayApp/commit/488e060), 16 Sep 2026). See the reflection below. |
-| Ubuntu: help before moving on | I helped a teammate harden the inspector table and screens ([commit d5d9029](https://github.com/aidan-g-barends/GoldenWayApp/commit/d5d9029), 18 Sep 2026) |
+| Own branch, named by convention | `AB-230255639` merged into `main` through pull requests on 17 Sep, 24 Sep and 1 Oct 2026 |
+| Every table has RLS; ethical capability | I found and fixed a security hole in the driver's `vehicle_runs` table ([commit 488e060](https://github.com/aidan-g-barends/GoldenWayApp/commit/488e060), 16 Sep 2026) |
+| Ubuntu: help before moving on | I helped a teammate harden the inspector table ([commit d5d9029](https://github.com/aidan-g-barends/GoldenWayApp/commit/d5d9029), 18 Sep 2026) |
+
+<div class="shots">
+  <figure class="shot"><img src="assets/img/agile/charter-v2.png" alt="Agile Team Charter v2.0, first page"><figcaption>Agile Team Charter v2.0, first page</figcaption></figure>
+</div>
+
+<div class="actions">
+  <a class="btn" href="assets/docs/Agile_Team_Charter_v2.0.pdf">Charter v2.0 (PDF)</a>
+</div>
 
 </div>
 
-<div class="reflection" markdown="1">
+<div class="panel" id="charter-re" role="tabpanel" hidden markdown="1">
 
 ### What the charter meant in practice
 
@@ -78,27 +121,38 @@ The first was **"every table has row-level security."** While working on driver 
 
 The second was **one owner per role and per shared file**. It kept us out of each other's code, but it also explains the hardest part of my work: getting the driver side to communicate with the admin and commuter sides. A delay report from a driver is only useful if the admin and the commuter see it, and those screens belonged to other people. I had to agree on how data passed between roles instead of just changing their code.
 
-The charter also showed me where I fell short. It says every member keeps an Agile Logbook, and I did not. Section 05 deals with that honestly.
-
 **What I take forward:** I will read a team charter as a set of rules I can check my work against, not as paperwork. On my next team I want us to agree on how roles hand data to each other at the start, because that is where my work slowed down.
 
 </div>
+</div>
+</section>
 
----
+<!-- =================================================================== -->
+<section class="stop" id="stories" markdown="1">
 
-<p class="eyebrow">02 / User Stories and Tasks</p>
+<div class="stop__head">
+  <span class="stop__num">2</span>
+  <div>
+    <h2>User Stories and Tasks</h2>
+    <p>The three Driver stories I owned, written from the driver's point of view, each broken into tasks I can link to a commit.</p>
+  </div>
+</div>
 
-## User Stories and Tasks {#stories}
+<div data-tabs markdown="1">
+<div class="tabs" role="tablist">
+  <button type="button" role="tab" aria-selected="true" aria-controls="stories-ev">Evidence</button>
+  <button type="button" role="tab" aria-selected="false" aria-controls="stories-re">Reflection</button>
+</div>
 
-A user story describes a feature from the user's point of view in the form *As a [user], I want [feature], so that [benefit]* (Cohn, 2004). Each story is then broken into tasks a developer can finish and test.
+<div class="panel" id="stories-ev" role="tabpanel" markdown="1">
 
-<div class="evidence" markdown="1">
+A user story describes a feature from the user's point of view in the form *As a [user], I want [feature], so that [benefit]* (Cohn, 2004). These stories come from the team's multirole product backlog, added after we split the app by role on 11 August ([backlog card on Trello](https://trello.com/c/h903LTtg/1-product-backlog-multirole-staff-roles)).
 
-### My Driver stories and the tasks behind them
+I wrote the acceptance criteria for this page from how each feature was built and tested, so they are a **reconstruction**, not text copied from the original cards.
+{: .note}
 
-The three Driver stories below come from the team's multirole product backlog, added after we split the app by role on 11 August ([backlog card](https://trello.com/c/h903LTtg/1-product-backlog-multirole-staff-roles)). The tasks are linked to my commits. I wrote the acceptance criteria for this page from how each feature was built and tested, so they are a **reconstruction**, not text copied from the original cards.
-
-#### DR-1 &nbsp; Start a run and report delays <span class="tag must">Must</span> <span class="tag done">Done</span>
+<div class="story" markdown="1">
+<div class="story__top"><span>DR-1 · Start a run and report delays</span><span><span class="tag must">Must</span> <span class="tag done">Done</span></span></div>
 
 > As a **driver**, I want to **start my run and report delays**, so that **commuters know where their bus is**.
 
@@ -109,13 +163,16 @@ The three Driver stories below come from the team's multirole product backlog, a
 - A delay report with a note shows up as a service alert that admin and commuters can see
 - The run timeline shows each status change in order
 
-| Task | Evidence |
+| Task | Commit |
 |---|---|
 | Delay note composer and run timeline on the Runs screen | [bc4b9e6](https://github.com/aidan-g-barends/GoldenWayApp/commit/bc4b9e6) |
 | Restrict runs to the Driver role in RLS, cap note length and delay minutes, friendly double-tap message | [488e060](https://github.com/aidan-g-barends/GoldenWayApp/commit/488e060) |
 | Admin alerts screen so driver delay reports reach admin, closing the driver to commuter alerts loop | [7878984](https://github.com/aidan-g-barends/GoldenWayApp/commit/7878984) |
 
-#### DR-2 &nbsp; Pre-trip note and on-time tracking <span class="tag should">Should</span> <span class="tag done">Done</span>
+</div>
+
+<div class="story" markdown="1">
+<div class="story__top"><span>DR-2 · Pre-trip note and on-time tracking</span><span><span class="tag should">Should</span> <span class="tag done">Done</span></span></div>
 
 > As a **driver**, I want to **add a pre-trip note and track whether my run is on time**, so that **delays are recorded accurately**.
 
@@ -125,12 +182,15 @@ The three Driver stories below come from the team's multirole product backlog, a
 - Completing a run keeps the delay that was reported, so the on-time figure stays accurate
 - The staff home screen shows a dashboard strip with the driver's figures
 
-| Task | Evidence |
+| Task | Commit |
 |---|---|
 | Add the pre-trip note to `start_run` and fix completed runs wiping their delay | [66efd9b](https://github.com/aidan-g-barends/GoldenWayApp/commit/66efd9b) |
 | Dashboard strip on the staff landing screen | [f8855ce](https://github.com/aidan-g-barends/GoldenWayApp/commit/f8855ce) |
 
-#### DR-3 &nbsp; Choose the run direction <span class="tag could">Could</span> <span class="tag done">Done</span>
+</div>
+
+<div class="story" markdown="1">
+<div class="story__top"><span>DR-3 · Choose the run direction</span><span><span class="tag could">Could</span> <span class="tag done">Done</span></span></div>
 
 > As a **driver**, I want to **choose the direction of my run**, so that **the timeline matches the way I am driving the route**.
 
@@ -139,21 +199,22 @@ The three Driver stories below come from the team's multirole product backlog, a
 - The driver picks a direction before starting a run
 - The screen shows a loading state while the run is being saved
 
-| Task | Evidence |
+| Task | Commit |
 |---|---|
 | Direction picker, loading state and composer fixes | [98147cb](https://github.com/aidan-g-barends/GoldenWayApp/commit/98147cb) |
 
-<div class="shot" markdown="1">
-![Driver Runs screen in GoldenWay](assets/img/agile/driver-runs.png)
-*The Driver Runs screen: start run, pre-trip note, delay reporting and the run timeline.*
 </div>
 
-The repository's history starts on 16 September 2026 with a combined import of the app, so the tables above only link commits recorded under my name.
-{: .note}
+<div class="shots">
+  <figure class="shot"><img src="assets/img/agile/driver-runs.png" alt="Driver Runs screen in GoldenWay"><figcaption>Driver Runs screen: start run, pre-trip note, delays and the run timeline</figcaption></figure>
+</div>
+
+The repository's history starts on 16 September 2026 with a combined import of the app, so the tables only link commits recorded under my name.
+{: .muted}
 
 </div>
 
-<div class="reflection" markdown="1">
+<div class="panel" id="stories-re" role="tabpanel" hidden markdown="1">
 
 ### What I learned about stories and tasks
 
@@ -166,119 +227,151 @@ Writing acceptance criteria for this page showed me what was missing during the 
 **What I take forward:** write acceptance criteria before coding, and include the users on the other end of the story (here, admin and commuters) in the criteria, not just the user named in it.
 
 </div>
+</div>
+</section>
 
----
+<!-- =================================================================== -->
+<section class="stop" id="product-backlog" markdown="1">
 
-<p class="eyebrow">03 / Product Backlog</p>
+<div class="stop__head">
+  <span class="stop__num">3</span>
+  <div>
+    <h2>Product Backlog</h2>
+    <p>Everything GoldenWay needed, in priority order. The first version lived on the board I managed in July; it was rebuilt around roles in August.</p>
+  </div>
+</div>
 
-## Product Backlog {#product-backlog}
+<div data-tabs markdown="1">
+<div class="tabs" role="tablist">
+  <button type="button" role="tab" aria-selected="true" aria-controls="pb-ev">Evidence</button>
+  <button type="button" role="tab" aria-selected="false" aria-controls="pb-re">Reflection</button>
+</div>
 
-The product backlog is the ordered list of everything the product needs. It is owned by the team and changes as the team learns. A sprint backlog is the small slice of it chosen for one sprint (Schwaber and Sutherland, 2020).
+<div class="panel" id="pb-ev" role="tabpanel" markdown="1">
 
-<div class="evidence" markdown="1">
+The product backlog is the ordered list of everything the product needs. A sprint backlog is the small slice of it chosen for one sprint (Schwaber and Sutherland, 2020).
 
-### Version 1: the backlog I set up (July 2026)
+<div class="cols" markdown="1">
+<div markdown="1">
 
-In July I was responsible for structuring our Trello board. These cards on [Board v1](https://trello.com/b/fMkfGDiw/goldenway-board) are assigned to me:
+#### Version 1: the backlog I managed (July 2026)
+
+In July I was in charge of our Trello board. Building the backlog was a team task, so the cards list every member, me included.
 
 | Trello card | Date | Status |
 |---|---|---|
 | [Team Meeting: Trello Board Layout](https://trello.com/c/3hL0apr3/46-team-meeting-trello-board-layout) | 14 Jul 2026 | Completed |
 | [Task: Create Product Backlog on Trello](https://trello.com/c/MmumlezL/45-task-create-product-backlog-on-trello) | 24 Jul 2026 | Completed |
-| 19 roadmap cards in the *Product backlog* list (below) | Created July 2026 | Planned |
+| 19 roadmap cards in the *Product backlog* list | July 2026 | Planned |
 
-The backlog was ordered with MoSCoW priorities and planned as 19 feature blocks:
+The 19 blocks, ordered with MoSCoW priorities: project setup; auth (design, backend, frontend); profile and card management; routes and fares; wallet and ride balance; ticket purchase; digital ticket / QR code; top-up and ride history; notifications; testing; stretch features (tap-to-pay, auto top-up, ratings); final QA and submission.
 
-| # | Backlog block | # | Backlog block |
-|---|---|---|---|
-| 1 | Project setup and planning | 11 | Ticket purchase: frontend |
-| 2 | Auth: design and database | 12 | Digital ticket / QR code: backend |
-| 3 | Auth: backend | 13 | Digital ticket / QR code: frontend |
-| 4 | Auth: frontend | 14 | Top-up and ride history: backend |
-| 5 | Profile and card management | 15 | Top-up and ride history: frontend |
-| 6 | Routes and fares: backend | 16 | Notifications |
-| 7 | Routes and fares: frontend | 17 | Testing pass and bug fixes |
-| 8 | Wallet and ride balance: backend | 18 | Stretch: tap-to-pay, auto top-up, ratings |
-| 9 | Wallet and ride balance: frontend | 19 | Final QA, documentation, submission |
-| 10 | Ticket purchase: backend | | |
-
-<div class="shot" markdown="1">
-![Trello Board v1 with the product backlog list](assets/img/agile/trello-board-v1.png)
-*Board v1: the product backlog list with the 19 roadmap cards I set up.*
 </div>
+<div markdown="1">
 
-### Version 2: the multirole backlog (August 2026 onward)
+#### How the backlog evolved
 
-On 11 August the team made GoldenWay a multirole app. Our Team Lead took over the Trello board and moved the work to [Board v2](https://trello.com/b/xyZiSfZl/goldenway-board-updated), where a [multirole backlog card](https://trello.com/c/h903LTtg/1-product-backlog-multirole-staff-roles) added stories for each staff role. <span class="tag team">Team artefact, managed by the Team Lead</span>
+<ul class="timeline">
+  <li><b>14 to 24 Jul 2026</b>Board layout agreed; product backlog of 19 roadmap cards created on Board v1.</li>
+  <li><b>11 Aug 2026</b>Team makes GoldenWay a multirole app. Our Team Lead takes over Trello and moves the work to <a href="https://trello.com/b/xyZiSfZl/goldenway-board-updated">Board v2</a>, with a backlog card of stories for each staff role.</li>
+  <li><b>Aug to Sep 2026</b>I own the Driver slice of the new backlog (below).</li>
+  <li><b>20 Oct 2026</b>Feature freeze: only bug fixes and documentation after this.</li>
+</ul>
 
-The Driver slice of that backlog, which I owned:
+#### The Driver slice I owned
 
-| ID | Story (short) | Priority | Status |
+| ID | Story | Priority | Status |
 |---|---|---|---|
 | DR-1 | Start a run and report delays | <span class="tag must">Must</span> | Done |
 | DR-2 | Pre-trip note and on-time tracking | <span class="tag should">Should</span> | Done |
 | DR-3 | Choose the run direction | <span class="tag could">Could</span> | Done |
 
-<div class="shot" markdown="1">
-![Trello Board v2 managed by the Team Lead](assets/img/agile/trello-board-v2.png)
-*Board v2: the updated board after the multirole decision.*
+</div>
+</div>
+
+<div class="shots">
+  <figure class="shot"><img src="assets/img/agile/trello-board-v1.png" alt="Board v1 rendered from its Trello data: the product backlog list holds the 19 roadmap cards; the green A is me"><figcaption>Board v1, rendered from its Trello data (26 Oct 2026). Green "A" = me.</figcaption></figure>
+  <figure class="shot"><img src="assets/img/agile/trello-board-v2.png" alt="Board v2, managed by the Team Lead after the multirole decision"><figcaption>Board v2, managed by the Team Lead</figcaption></figure>
 </div>
 
 </div>
 
-<div class="reflection" markdown="1">
+<div class="panel" id="pb-re" role="tabpanel" hidden markdown="1">
 
 ### What I learned about managing a backlog
 
-Setting up the first backlog taught me how much planning goes into a product before any code is written. Laying out 19 blocks forced me to think about order: auth before profiles, wallets before ticket purchases, testing near the end.
+Building the first backlog as a team, and then looking after it on the board, taught me how much planning goes into a product before any code is written. Laying out 19 blocks forced us to think about order: auth before profiles, wallets before ticket purchases, testing near the end.
 
-Looking back, version 1 had two weaknesses. First, I named the cards *Sprint 1* to *Sprint 19* but kept them in the *Product backlog* list. That mixed up two different things. A product backlog is a prioritised list of **what** the product needs. A sprint is a **time box** in which the team picks some of those items. Naming backlog items as sprints made it look as if we had already decided when each would be done. Second, the plan assumed a commuter-only app and 19 sprints. In reality we had about ten one-week sprints, a change of Team Lead in July and a switch to five roles in August.
+Looking back, version 1 had two weaknesses. First, we named the cards *Sprint 1* to *Sprint 19* but kept them in the *Product backlog* list. That mixed up two different things. A product backlog is a prioritised list of **what** the product needs. A sprint is a **time box** in which the team picks some of those items. Naming backlog items as sprints made it look as if we had already decided when each would be done. Second, the plan assumed a commuter-only app and 19 sprints. In reality we had about ten one-week sprints, a change of Team Lead in July and a switch to five roles in August.
 
 The backlog had to change, and it did. When the Team Lead took over the board and rebuilt it around roles, I saw that a product backlog is not a plan you defend. It is a list you keep reordering as you learn. That is the point of Agile responding to change rather than following a plan (Beck et al., 2001).
 
 **What I take forward:** keep the product backlog as user stories with priorities, keep sprints as a separate time box, and expect the backlog to be rewritten when the product changes.
 
 </div>
+</div>
+</section>
 
----
+<!-- =================================================================== -->
+<section class="stop" id="sprint-backlog" markdown="1">
 
-<p class="eyebrow">04 / Sprint Backlog</p>
+<div class="stop__head">
+  <span class="stop__num">4</span>
+  <div>
+    <h2>Sprint Backlog</h2>
+    <p>What I committed to in my main delivery sprint, the week of the 17 September integration demo, and what actually happened.</p>
+  </div>
+</div>
 
-## Sprint Backlog {#sprint-backlog}
+<div data-tabs markdown="1">
+<div class="tabs" role="tablist">
+  <button type="button" role="tab" aria-selected="true" aria-controls="sb-ev">Evidence</button>
+  <button type="button" role="tab" aria-selected="false" aria-controls="sb-re">Reflection</button>
+</div>
 
-**Product backlog vs sprint backlog.** The product backlog (section 03) is everything the product could need, in priority order. The sprint backlog is the few items the team commits to for one sprint, plus the tasks to deliver them. Our sprints were one week long, planned on Tuesday and closed with a retrospective at the end of the week (Team Charter, section 5.2).
+<div class="panel" id="sb-ev" role="tabpanel" markdown="1">
+
+**Product backlog vs sprint backlog.** The product backlog (stop 3) is everything the product could need, in priority order. The sprint backlog is the few items the team commits to for one sprint, plus the tasks to deliver them. Our sprints were one week long, planned on Tuesday and closed with a retrospective (Group 26, 2026).
 {: .note}
 
-<div class="evidence" markdown="1">
-
-### My main delivery sprint: week of 15 to 18 September 2026
-
-**Team sprint goal:** demonstrate the integrated app (frontend and backend working against the live database) at the 17 September demo (Charter, Goal 1).
-
+**Team sprint goal:** demonstrate the integrated app, frontend and backend working against the live database, at the 17 September demo.<br>
 **My sprint goal:** get the Driver role working securely end to end, from the driver's screen to admin and commuters.
 
-| Item | Task | Owner | Date | Status | Evidence |
-|---|---|---|---|---|---|
-| DR-2 | Pre-trip note on start run, on-time fix | Me | 16 Sep | <span class="tag done">Done</span> | [66efd9b](https://github.com/aidan-g-barends/GoldenWayApp/commit/66efd9b) |
-| DR-1 | Delay note composer and run timeline | Me | 16 Sep | <span class="tag done">Done</span> | [bc4b9e6](https://github.com/aidan-g-barends/GoldenWayApp/commit/bc4b9e6) |
-| DR-2 | Dashboard strip on staff landing | Me | 16 Sep | <span class="tag done">Done</span> | [f8855ce](https://github.com/aidan-g-barends/GoldenWayApp/commit/f8855ce) |
-| DR-1 | Fix RLS privilege escalation on runs, input limits | Me | 16 Sep | <span class="tag done">Done</span> | [488e060](https://github.com/aidan-g-barends/GoldenWayApp/commit/488e060) |
-| DR-3 | Direction picker and loading state | Me | 16 Sep | <span class="tag done">Done</span> | [98147cb](https://github.com/aidan-g-barends/GoldenWayApp/commit/98147cb) |
-| Bug | Staff login sent to the wrong home screen | Me | 16 Sep | <span class="tag done">Done</span> | [38f43d0](https://github.com/aidan-g-barends/GoldenWayApp/commit/38f43d0) |
-| Staff | Staff profile edit and account deactivation | Me | 17 Sep | <span class="tag done">Done</span> | [6b0ec07](https://github.com/aidan-g-barends/GoldenWayApp/commit/6b0ec07) |
-| Help | Inspector table hardening and inspection history (helping a teammate) | Me, for the Inspector owner | 18 Sep | <span class="tag done">Done</span> | [d5d9029](https://github.com/aidan-g-barends/GoldenWayApp/commit/d5d9029) |
-| DR-1 | Admin alerts screen (driver to commuter alerts loop) | Me | 18 Sep | <span class="tag done">Done</span> | [7878984](https://github.com/aidan-g-barends/GoldenWayApp/commit/7878984) |
+| Item | Task | Date | Status | Commit |
+|---|---|---|---|---|
+| DR-2 | Pre-trip note on start run, on-time fix | 16 Sep | <span class="tag done">Done</span> | [66efd9b](https://github.com/aidan-g-barends/GoldenWayApp/commit/66efd9b) |
+| DR-1 | Delay note composer and run timeline | 16 Sep | <span class="tag done">Done</span> | [bc4b9e6](https://github.com/aidan-g-barends/GoldenWayApp/commit/bc4b9e6) |
+| DR-2 | Dashboard strip on staff landing | 16 Sep | <span class="tag done">Done</span> | [f8855ce](https://github.com/aidan-g-barends/GoldenWayApp/commit/f8855ce) |
+| DR-1 | Fix RLS privilege escalation on runs, input limits | 16 Sep | <span class="tag done">Done</span> | [488e060](https://github.com/aidan-g-barends/GoldenWayApp/commit/488e060) |
+| DR-3 | Direction picker and loading state | 16 Sep | <span class="tag done">Done</span> | [98147cb](https://github.com/aidan-g-barends/GoldenWayApp/commit/98147cb) |
+| Bug | Staff login sent to the wrong home screen | 16 Sep | <span class="tag done">Done</span> | [38f43d0](https://github.com/aidan-g-barends/GoldenWayApp/commit/38f43d0) |
+| Staff | Staff profile edit and account deactivation | 17 Sep | <span class="tag done">Done</span> | [6b0ec07](https://github.com/aidan-g-barends/GoldenWayApp/commit/6b0ec07) |
+| Help | Inspector table hardening and inspection history (helping a teammate) | 18 Sep | <span class="tag done">Done</span> | [d5d9029](https://github.com/aidan-g-barends/GoldenWayApp/commit/d5d9029) |
+| DR-1 | Admin alerts screen (driver to commuter alerts loop) | 18 Sep | <span class="tag done">Done</span> | [7878984](https://github.com/aidan-g-barends/GoldenWayApp/commit/7878984) |
 
-**Outcome:** my branch `AB-230255639` was merged into `main` through pull requests on 17 September (the demo day). Later merges followed on 24 September and 1 October, ahead of deployment and the 20 October feature freeze.
+**Outcome:** my branch `AB-230255639` was merged into `main` through pull requests on 17 September, demo day. Later merges followed on 24 September and 1 October, before deployment and the 20 October feature freeze.
 
-<div class="shot" markdown="1">
-![Admin alerts screen showing a driver delay](assets/img/agile/admin-alerts.png)
-*The admin alerts screen that receives driver delay reports.*
+#### The security fix from this sprint
+
+Before the fix, the rule only checked `driver_id = auth.uid()`. Now the caller must also hold the Driver role:
+
+```sql
+create policy vehicle_runs_insert on public.vehicle_runs
+  for insert with check (
+    (driver_id = auth.uid() and public.is_staff('DRIVER'))
+    or public.is_staff('ADMIN')
+  );
+```
+
+<span class="muted">From migration <code>0012a_driver_hardening.sql</code>, commit <a href="https://github.com/aidan-g-barends/GoldenWayApp/commit/488e060">488e060</a>.</span>
+
+<div class="shots">
+  <figure class="shot"><img src="assets/img/agile/admin-alerts.png" alt="Admin alerts screen showing a driver delay"><figcaption>Admin alerts screen receiving a driver delay report</figcaption></figure>
 </div>
 
 </div>
 
-<div class="reflection" markdown="1">
+<div class="panel" id="sb-re" role="tabpanel" hidden markdown="1">
 
 ### What I learned about planning a sprint
 
@@ -291,127 +384,155 @@ What worked was the time box itself. A one-week sprint with a fixed demo date fo
 **What I take forward:** break cross-role tasks out as their own sprint items, estimate them higher, keep some capacity free for helping others, and spread commits through the sprint instead of finishing near the deadline.
 
 </div>
+</div>
+</section>
 
----
+<!-- =================================================================== -->
+<section class="stop" id="logbook" markdown="1">
 
-<p class="eyebrow">05 / Agile Logbook</p>
+<div class="stop__head">
+  <span class="stop__num">5</span>
+  <div>
+    <h2>Agile Logbook</h2>
+    <p>My week-by-week record of the project, in the stand-up shape our charter uses: what was done, my part, what came next and what blocked me.</p>
+  </div>
+</div>
 
-## Agile Logbook {#logbook}
+<div data-tabs markdown="1">
+<div class="tabs" role="tablist">
+  <button type="button" role="tab" aria-selected="true" aria-controls="log-ev">Evidence</button>
+  <button type="button" role="tab" aria-selected="false" aria-controls="log-re">Reflection</button>
+</div>
 
-An Agile logbook records stand-ups, sprint plans and retrospectives so a team can track progress and blockers over time.
+<div class="panel" id="log-ev" role="tabpanel" markdown="1">
 
-**Honesty note.** Our charter asked each member to keep a logbook, and **I did not keep one during the project.** The record below is a **reconstruction written on 26 October 2026** from dated evidence only: Trello card dates, Git commits and merges, and milestones in our charter. Each entry shows its source. I have not invented stand-ups or meetings.
-{: .note}
-
-<div class="evidence" markdown="1">
-
-### Reconstructed progress record
+An Agile logbook records stand-ups, sprint plans and retrospectives so a team can track progress and blockers over time. Each week below lists the evidence it is based on: Trello cards, commits in the GoldenWay repository and milestones in our charter.
 
 <details markdown="1" open>
-<summary><code>29 Apr to 4 May</code> Trello set up and charter v1.0</summary>
+<summary><code>Week 1 · 13 to 17 Jul</code> Board layout and the pitch</summary>
 
-- **Done (team):** meeting to set up Trello and plan the charter; charter v1.0 due 4 May with sections split between members.
-- **Source:** Trello cards *Team Meeting: Trello Setup and Charter Planning*, *Agile Team Charter*, *Task Allocation: Charter Section Ownership*.
+- **Done:** Trello board layout agreed in a team meeting (14 Jul); pitch presented to the lecturer (17 Jul). Our previous Team Lead left for an internship and Joshua Adams took over.
+- **My part:** in charge of the Trello board.
+- **Next:** build the product backlog on Trello.
+- **Evidence:** Trello cards *Team Meeting: Trello Board Layout* and *Presentation Day*; Charter section 2.
+</details>
+
+<details markdown="1">
+<summary><code>Week 2 · 20 to 24 Jul</code> Product backlog on Trello</summary>
+
+- **Done:** product backlog created with 19 roadmap cards (completed 24 Jul); business presentation submission updated (22 Jul); backlog reworked after lecturer feedback.
+- **My part:** looked after the board while the team built the backlog.
+- **Next:** Figma prototype.
+- **Evidence:** Trello cards *Task: Create Product Backlog on Trello* and *Update Business Presentation Submission*; Charter milestones.
+</details>
+
+<details markdown="1">
+<summary><code>Week 3 · 27 to 31 Jul</code> Figma prototype</summary>
+
+- **Done (team):** Figma prototype presented to the lecturer (29 Jul).
+- **Next:** set up the React project.
+- **Evidence:** Charter milestones.
+</details>
+
+<details markdown="1">
+<summary><code>Week 4 · 3 to 7 Aug</code> React set-up</summary>
+
+- **Done (team):** React project set up (4 Aug).
+- **Evidence:** Charter milestones; Trello *Sprint 1: Project Setup and Planning* card moved to In Progress.
+</details>
+
+<details markdown="1">
+<summary><code>Week 5 · 11 to 14 Aug</code> Multirole decision: I take the Driver role</summary>
+
+- **Done:** team agreed to make GoldenWay a multirole app and designed the database schema (11 Aug).
+- **My part:** assigned the Driver role: starting runs, delay reporting, run timelines and on-time tracking. The Team Lead took over the Trello board from here (Board v2).
+- **Next:** get the Driver role working against the real database.
+- **Evidence:** Charter section 3 and milestones.
+</details>
+
+<details markdown="1">
+<summary><code>Week 6 · 18 to 21 Aug</code> Every role on the real database</summary>
+
+- **Done:** team milestone reached on 21 Aug: every role, Driver included, had database-backed features instead of mock data.
+- **Next:** integration demo planned for 17 Sep.
+- **Evidence:** Charter goal 2 and milestones.
 </details>
 
 <details markdown="1" open>
-<summary><code>13 to 17 Jul</code> Board layout and pitch week</summary>
+<summary><code>Week 7 · 15 to 18 Sep</code> Driver build, security fix and the demo</summary>
 
-- **Done (me):** assigned to the *Trello Board Layout* team meeting card (14 Jul); assigned to *Presentation Day* (16 Jul).
-- **Team:** previous Team Lead left for an internship; Joshua Adams took over as lead. Pitch presented 17 Jul.
-- **Source:** Trello cards; Charter section 2 and milestones.
+- **Done (16 Sep):** pre-trip note and on-time fix; delay note composer and run timeline; dashboard strip; direction picker; staff login routing fix.
+- **Blocker found (16 Sep):** the `vehicle_runs` security rule let any staff member create a fake run and fire a false alert to commuters. Confirmed with a clerk demo account, fixed and re-checked the same day.
+- **Done (17 Sep):** staff profile edit and account deactivation; my branch merged into `main` through pull requests #1 and #2 on demo day.
+- **Done (18 Sep):** helped a teammate harden the inspector table and build inspection history; built the admin alerts screen so driver delays reach admin.
+- **Blocker:** my driver work took longer than planned, and getting it to communicate with the admin and commuter sides was the hardest part. The inspector help came on top of it.
+- **Evidence:** commits 66efd9b, bc4b9e6, f8855ce, 488e060, 98147cb, 38f43d0, 6b0ec07, d5d9029, 7878984; migration `0012a_driver_hardening.sql`.
 </details>
 
-<details markdown="1" open>
-<summary><code>20 to 24 Jul</code> Product backlog built after lecturer feedback</summary>
+<details markdown="1">
+<summary><code>Week 8 · 22 to 25 Sep</code> Merging my work</summary>
 
-- **Done (me):** updated the business presentation submission (22 Jul); created the product backlog on Trello with 19 roadmap cards (completed by 24 Jul).
-- **Team:** backlog reworked after lecturer feedback.
-- **Source:** Trello cards *Update Business Presentation Submission*, *Task: Create Product Backlog on Trello*; Charter milestones.
+- **Done:** my work merged again through pull request #8 (24 Sep). Team added email verification, card linking, wallet and password reset.
+- **Evidence:** merge commit for pull request #8; Charter milestones.
 </details>
 
-<details markdown="1" open>
-<summary><code>27 Jul to 14 Aug</code> Prototype, React set-up and the multirole decision</summary>
+<details markdown="1">
+<summary><code>Week 9 · 28 Sep to 2 Oct</code> Deployment preparation</summary>
 
-- **Team:** Figma prototype presented (29 Jul); React project set up (4 Aug); multirole roles agreed and database schema designed (11 Aug).
-- **Me:** assigned the Driver role. After this point the Team Lead took over the Trello board (Board v2).
-- **Source:** Charter sections 3 and 7.2; Trello Board v1 *Sprint 1* card last moved 5 Aug.
+- **Done:** branch `AB-230255639` merged into `main` through pull request #12 (1 Oct) as the team prepared to deploy.
+- **Evidence:** merge commits in the repository; Charter milestones.
 </details>
 
-<details markdown="1" open>
-<summary><code>16 Sep</code> Driver lane build day</summary>
+<details markdown="1">
+<summary><code>Week 10 · 19 to 20 Oct</code> Feature freeze</summary>
 
-- **Done:** pre-trip note and on-time fix; delay composer and run timeline; dashboard strip; direction picker; staff login routing fix.
-- **Blocker found:** the `vehicle_runs` security rule let any staff member create a fake run and fire a false alert to commuters. Confirmed on the live project with a clerk demo account, fixed and re-checked the same day.
-- **Source:** commits 66efd9b, bc4b9e6, f8855ce, 488e060, 98147cb, 38f43d0 and the notes in migration `0012a_driver_hardening.sql`.
+- **Done (team):** code review fixes, feature freeze declared, charter updated to v2.0.
+- **Next:** individual portfolios due 27 Oct.
+- **Evidence:** Charter revision history and milestones.
 </details>
 
-<details markdown="1" open>
-<summary><code>17 Sep</code> Integration demo</summary>
-
-- **Done:** staff profile edit and account deactivation; my branch merged into `main` through pull requests on demo day.
-- **Source:** commit 6b0ec07; merge commits for pull requests #1 and #2.
-</details>
-
-<details markdown="1" open>
-<summary><code>18 Sep</code> Helping on Inspector, closing the alerts loop</summary>
-
-- **Done:** helped a teammate harden the inspector table and build inspection history; built the admin alerts screen so driver delays reach admin.
-- **Problem:** my driver work was taking longer than planned, and the inspector help came on top of it.
-- **Source:** commits d5d9029, 7878984.
-</details>
-
-<details markdown="1" open>
-<summary><code>24 Sep to 1 Oct</code> Merges before deployment</summary>
-
-- **Done:** further merges of my work through pull request #8 (24 Sep) and pull request #12 (1 Oct) ahead of deployment preparation.
-- **Source:** merge commits in the repository.
-</details>
-
-<details markdown="1" open>
-<summary><code>19 to 20 Oct</code> Feature freeze and charter v2.0</summary>
-
-- **Team:** code review fixes, feature freeze declared, charter updated to v2.0.
-- **Source:** Charter revision history and milestones.
-</details>
-
-### Retrospective: my sprint in September
+#### Retrospective: my Week 7 sprint
 
 | Went well | To improve | Action |
 |---|---|---|
 | All three Driver stories done and merged by demo day; security hole found and fixed before release | Driver work took longer than planned; most commits landed close to the demo | Split cross-role tasks into their own items and estimate them higher |
 | Helped a teammate finish the inspector table | Unplanned help was not in the sprint plan | Keep spare capacity in every sprint |
-| Commits record what changed | Some commit messages, like "pudate", say nothing | Write clear commit messages and a daily logbook entry |
+| Commits record what changed | Some commit messages, like "pudate", say nothing | Write clear commit messages and log progress the same day |
 
 </div>
 
-<div class="reflection" markdown="1">
+<div class="panel" id="log-re" role="tabpanel" hidden markdown="1">
 
-### What I learned from (not) keeping a logbook
+### What tracking progress taught me
 
-Rebuilding this logbook after the project taught me more about logbooks than keeping one would have. Git and Trello let me prove **what** I did and **when**: every commit has a date and every card has a history. But they could not tell me **why** I made a decision, what blocked me on a given day, or how long a problem took. That information only exists if someone writes it down at the time, and I didn't.
+Looking back over the logbook, the weeks are not equal. Weeks 1 to 6 are mostly team milestones, and almost all of my own development work sits in Week 7. That pattern is useful: it shows my effort was concentrated around the demo rather than spread across the sprints, which is exactly what made Week 7 run over. A logbook makes that visible in a way that memory does not.
 
-My own commit history makes the point. A message like *"fix RLS privilege escalation on vehicle runs"* explains itself months later. A message like *"pudate"* on 18 September tells me nothing, and I had to open the files to see that it was the inspector work. A daily logbook line would have recorded that I was helping a teammate, which is exactly the kind of blocker a stand-up is meant to surface so the team can adjust.
+Tracking also shows the difference between **what** happened and **why**. Git and Trello record what I did and when, but the blocker in Week 7, that the driver side took longer because it had to talk to the admin and commuter sides, only shows up because I wrote it down. That is the kind of information a stand-up is meant to surface early, so the team can adjust before the deadline instead of after it.
 
-This connects back to the charter. Its transparency value says blockers come up at stand-up and the board shows the real state of the work. When I don't log progress, my team and lecturer only see my output, not the problems behind it, and they cannot help early. In a workplace, that is the difference between a manager knowing a task is at risk on Tuesday and finding out on Friday.
+My commit messages taught me the same lesson. *"fix RLS privilege escalation on vehicle runs"* explains itself months later. *"pudate"* on 18 September tells nobody anything, and I had to open the files to see that it was the inspector work. Clear commit messages are a logbook too.
 
-**What I take forward:** a short daily entry (done, next, blocked) takes two minutes and saves hours of reconstruction. I will keep one on my next project, and write commit messages that make sense to someone else.
+This connects back to the charter's transparency value: blockers come up at stand-up and the board shows the real state of the work. When progress and blockers are logged, the team and the lecturer can see problems coming and help. In a workplace, that is the difference between a manager knowing a task is at risk on Tuesday and finding out on Friday.
+
+**What I take forward:** log progress the same day in a short done, next, blocked format, spread my work across the sprint instead of bunching it near the demo, and write commit messages someone else can understand.
 
 </div>
+</div>
+</section>
 
----
+<!-- =================================================================== -->
+<section class="stop" id="connect" markdown="1">
 
-<p class="eyebrow">06 / Connect</p>
+<h2 class="bar">What I take into the workplace</h2>
 
-## How it fits together
-
-The five artefacts tell one story. The **charter** set the rules (role ownership, RLS on every table, a logbook each). The **product backlog** I set up in July was replaced by a role-based one when the product changed. My **user stories** came from that backlog, and their tasks became my **sprint backlog** for the week of the September demo. The **logbook** shows where that sprint ran over, and why I now want to log progress as it happens.
+The five artefacts tell one story. The **charter** set the rules (role ownership, RLS on every table, a logbook each). The **product backlog** I managed in July was replaced by a role-based one when the product changed. My **user stories** came from that backlog, and their tasks became my **sprint backlog** for the week of the September demo. The **logbook** shows where that sprint ran over, and why logging blockers early matters.
 
 The biggest lesson across all five: in a team project, the hard work sits between roles. What took the most effort was making a driver's report reach admin and commuters, keeping that path secure, and helping a teammate along the way. Agile tools such as stories, sprints, boards and logbooks matter most at exactly those points, because they keep everyone's work visible to everyone else.
 
----
+</section>
 
-## References {#references}
+<section class="stop refs" id="references" markdown="1">
+
+<h2 class="bar">References</h2>
 
 Beck, K. et al. (2001) *Manifesto for Agile Software Development*. Available at: [https://agilemanifesto.org/](https://agilemanifesto.org/) (Accessed: 26 October 2026).
 
@@ -422,3 +543,5 @@ Cohn, M. (2004) *User Stories Applied: For Agile Software Development*. Boston: 
 Group 26 (2026) *Agile Team Charter, Version 2.0*. Unpublished team document, Cape Peninsula University of Technology.
 
 Schwaber, K. and Sutherland, J. (2020) *The Scrum Guide*. Available at: [https://scrumguides.org/scrum-guide.html](https://scrumguides.org/scrum-guide.html) (Accessed: 26 October 2026).
+
+</section>
