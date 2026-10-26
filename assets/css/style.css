@@ -152,6 +152,16 @@ h4 { font-size: .95rem; font-weight: 700; margin: 1.4em 0 .5em; }
 .project .links { margin-top: 12px; font-size: .9rem; color: var(--muted); }
 .project .links a { font-weight: 600; }
 
+/* Home: numbered links to the five Agile artefacts */
+.artefacts { list-style: none; margin: 0; padding: 0; counter-reset: artefact; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); overflow: hidden; }
+.artefacts li { counter-increment: artefact; border-bottom: 1px solid var(--border); }
+.artefacts li:last-child { border-bottom: 0; }
+.artefacts a, .artefacts a:visited { display: grid; grid-template-columns: 28px 1fr; column-gap: 12px; padding: 12px 16px; color: var(--text); text-decoration: none; }
+.artefacts a::before { content: counter(artefact); grid-row: span 2; align-self: start; display: grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: var(--accent-soft); color: var(--accent); font-size: 12px; font-weight: 700; }
+.artefacts a:hover { background: var(--surface-2); }
+.artefacts b { font-weight: 600; }
+.artefacts span { color: var(--muted); font-size: .9rem; }
+
 /* ---------- Agile page ---------- */
 /* Contribution figures */
 .figures { list-style: none; margin: 0 0 8px; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); overflow: hidden; }

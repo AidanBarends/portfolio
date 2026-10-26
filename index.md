@@ -25,6 +25,18 @@ description: Digital portfolio of Aidan Barends, Application Development student
   </aside>
 </section>
 
+<section class="section" aria-labelledby="agile-h">
+  <h2 class="bar" id="agile-h">Agile eWIL portfolio (PRP370)</h2>
+  <p class="muted">The assessed part of this site. Each artefact has its evidence and my reflection, based on my Driver role in the GoldenWay group project.</p>
+  <ol class="artefacts">
+    <li><a href="agile.html#charter"><b>Agile Team Charter</b><span>Our team agreement and how its rules shaped my work</span></a></li>
+    <li><a href="agile.html#stories"><b>User Stories &amp; Tasks</b><span>My three Driver stories, broken into tasks linked to commits</span></a></li>
+    <li><a href="agile.html#product-backlog"><b>Product Backlog</b><span>The backlog I managed in July and how it changed</span></a></li>
+    <li><a href="agile.html#sprint-backlog"><b>Sprint Backlog</b><span>My main sprint before the 17 September demo</span></a></li>
+    <li><a href="agile.html#logbook"><b>Agile Logbook</b><span>Week-by-week progress, blockers and a retrospective</span></a></li>
+  </ol>
+</section>
+
 <section class="section" aria-labelledby="skills-h">
   <h2 class="bar" id="skills-h">Technical skills</h2>
   <ul class="pills">

@@ -4,8 +4,6 @@ nav: interview
 description: Mock interview video and reflections by Aidan Barends.
 ---
 
-<span class="eyebrow">~/aidan/interview</span>
-
 # Mock Interview
 
 My mock interview, recorded to prepare for real job opportunities, followed by my reflections using the STAR method.
@@ -15,7 +13,7 @@ My mock interview, recorded to prepare for real job opportunities, followed by m
   <iframe src="https://www.youtube.com/embed/3GxY9a-963M" title="Aidan Barends mock interview" allowfullscreen></iframe>
 </div>
 
-<h2 class="bar" style="margin-top:48px">{% include icon.html name="pen" %}Reflections (STAR method)</h2>
+<h2 class="bar" style="margin-top:48px">Reflections (STAR method)</h2>
 
 <div class="grid grid--2" markdown="1">
 

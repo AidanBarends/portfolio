@@ -59,7 +59,7 @@ An Agile team charter is a living, co-created agreement that sets out a team's p
 <div class="cols" markdown="1">
 <div markdown="1">
 
-#### Roles and ownership
+### Roles and ownership
 
 | Member | Role |
 |---|---|
@@ -72,7 +72,7 @@ An Agile team charter is a living, co-created agreement that sets out a team's p
 </div>
 <div markdown="1">
 
-#### Working agreements
+### Working agreements
 
 - One-week sprints: planning on Tuesday, retro at the end of the week
 - Stand-ups on class days: done, next, blockers
@@ -83,7 +83,7 @@ An Agile team charter is a living, co-created agreement that sets out a team's p
 </div>
 </div>
 
-#### What the charter covers
+### What the charter covers
 
 | Element | What our charter says |
 |---|---|
@@ -93,7 +93,7 @@ An Agile team charter is a living, co-created agreement that sets out a team's p
 | Boundaries | Simulated payments only, no full card numbers, no NFC hardware, feature freeze from 20 October |
 | Definition of Done | Works on the real database, lint and tests pass, PR reviewed and merged, checked on mobile, Trello card and logbook updated |
 
-#### Where the charter shows up in my own work
+### Where the charter shows up in my own work
 
 | Charter rule | My evidence |
 |---|---|
@@ -257,7 +257,7 @@ The product backlog is the ordered list of everything the product needs. A sprin
 <div class="cols" markdown="1">
 <div markdown="1">
 
-#### Version 1: the backlog I managed (July 2026)
+### Version 1: the backlog I managed (July 2026)
 
 In July I was in charge of our Trello board. Building the backlog was a team task, so the cards list every member, me included.
 
@@ -272,7 +272,7 @@ The 19 blocks, ordered with MoSCoW priorities: project setup; auth (design, back
 </div>
 <div markdown="1">
 
-#### How the backlog evolved
+### How the backlog evolved
 
 <ul class="timeline">
   <li><b>Mar to May 2026 · PFP3</b>First board, <em>Group 26: PFP3 Assignment</em>: the business-idea deliverables, charter v1.0, feasibility analysis and the MVP wireframe, all submitted.</li>
@@ -282,7 +282,7 @@ The 19 blocks, ordered with MoSCoW priorities: project setup; auth (design, back
   <li><b>20 Oct 2026</b>Feature freeze: only bug fixes and documentation after this.</li>
 </ul>
 
-#### The Driver slice I owned
+### The Driver slice I owned
 
 | ID | Story | Priority | Status |
 |---|---|---|---|
@@ -357,7 +357,7 @@ The backlog had to change, and it did. When the Team Lead took over the board an
 
 **Outcome:** my branch `AB-230255639` was merged into `main` through pull requests on 17 September, demo day. Later merges followed on 24 September and 1 October, before deployment and the 20 October feature freeze.
 
-#### The security fix from this sprint
+### The security fix from this sprint
 
 Before the fix, the rule only checked `driver_id = auth.uid()`. Now the caller must also hold the Driver role:
 
@@ -498,7 +498,7 @@ An Agile logbook records stand-ups, sprint plans and retrospectives so a team ca
 - **Evidence:** Charter revision history and milestones.
 </details>
 
-#### Retrospective: my Week 7 sprint
+### Retrospective: my Week 7 sprint
 
 | Went well | To improve | Action |
 |---|---|---|
