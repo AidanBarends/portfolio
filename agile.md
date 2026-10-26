@@ -13,14 +13,14 @@ GoldenWay is a web app our team (Group 26) built so Golden Arrow commuters can b
 
 <div class="facts">
   <div class="fact"><b>3</b><span>Driver user stories delivered</span></div>
-  <div class="fact"><b>10</b><span>commits under my name</span></div>
+  <div class="fact"><b>1,790</b><span>lines of code added across 15 files</span></div>
   <div class="fact"><b>6</b><span>database migrations I wrote</span></div>
   <div class="fact"><b>4</b><span>pull request merges of my branch</span></div>
   <div class="fact"><b>1</b><span>security hole found and fixed</span></div>
 </div>
 
 <div class="actions">
-  <a class="btn" href="https://trello.com/b/fMkfGDiw/goldenway-board">Open Trello Board v1</a>
+  <a class="btn" href="https://trello.com/b/fMkfGDiw/goldenway-board">Open our Trello board</a>
   <a class="btn btn--ghost" href="https://github.com/aidan-g-barends/GoldenWayApp">GoldenWay repository</a>
   <a class="btn btn--ghost" href="https://goldenwayapp.vercel.app/">Live app</a>
 </div>
@@ -118,11 +118,11 @@ An Agile team charter is a living, co-created agreement that sets out a team's p
 
 Two of the charter's rules ended up shaping my actual code on the Driver role.
 
-The first was **"every table has row-level security."** While working on driver runs, I found that the security rule on our `vehicle_runs` table only checked that a run belonged to the logged-in user. It never checked that the user was actually a driver. That meant a clerk, agent or inspector could create a fake run and mark it delayed, which would send a false service alert to commuters. I confirmed it on the live project with a clerk demo account, fixed it so only drivers (or admins) can create runs, and checked it was blocked. This is what the charter's ethical capability value looks like in practice: having RLS on a table is not enough, you have to test whether the rule actually protects users.
+The first was **"every table has row-level security."** While working on driver runs, I found that the security rule on our `vehicle_runs` table only checked that a run belonged to the logged-in user. It never checked that the user was actually a driver. That meant a clerk, agent or inspector could create a fake run and mark it delayed, which would send a false service alert to commuters. I confirmed it on the live project with a clerk demo account, fixed it so only drivers (or admins) can create runs, and checked it was blocked. Having RLS switched on was not enough. The rule itself had to be tested from the point of view of the wrong user.
 
-The second was **one owner per role and per shared file**. It kept us out of each other's code, but it also explains the hardest part of my work: getting the driver side to communicate with the admin and commuter sides. A delay report from a driver is only useful if the admin and the commuter see it, and those screens belonged to other people. I had to agree on how data passed between roles instead of just changing their code.
+The second was **Ubuntu: if someone is stuck, help them before moving on to your own next task**. In the week of the demo a teammate needed help setting up his inspector table, so I helped, even though my own driver work was already behind. The charter made that the expected thing to do, but nothing in our planning made room for it, which is part of why my sprint ran over (stop 4).
 
-**What I take forward:** I will read a team charter as a set of rules I can check my work against, not as paperwork. On my next team I want us to agree on how roles hand data to each other at the start, because that is where my work slowed down.
+**What I take forward:** I'll use a charter as a checklist for my own work, for example by testing every security rule I write against a user who should be blocked. I'd also want the next charter to say how helping a teammate gets planned, not just that we should do it.
 
 </div>
 </div>
@@ -208,6 +208,7 @@ I wrote the acceptance criteria for this page from how each feature was built an
 
 <div class="shots">
   <figure class="shot"><img src="assets/img/agile/driver-runs.png" alt="Driver Runs screen in GoldenWay"><figcaption>Driver "My runs" screen: active run, status buttons (on time, +10, +20, breakdown, end run), today's schedule and recent runs</figcaption></figure>
+  <figure class="shot"><img src="assets/img/agile/driver-home.png" alt="Driver landing page with the run status card and dashboard strip"><figcaption>Driver landing page: run status card, dashboard strip and shortcuts (DR-2)</figcaption></figure>
 </div>
 
 The repository's history starts on 16 September 2026 with a combined import of the app, so the tables only link commits recorded under my name.
@@ -273,8 +274,9 @@ The 19 blocks, ordered with MoSCoW priorities: project setup; auth (design, back
 #### How the backlog evolved
 
 <ul class="timeline">
-  <li><b>14 to 24 Jul 2026</b>Board layout agreed; product backlog of 19 roadmap cards created on Board v1.</li>
-  <li><b>11 Aug 2026</b>Team makes GoldenWay a multirole app. Our Team Lead takes over Trello and moves the work to <a href="https://trello.com/b/xyZiSfZl/goldenway-board-updated">Board v2</a>, with a backlog card of stories for each staff role.</li>
+  <li><b>Mar to May 2026 · PFP3</b>First board, <em>Group 26: PFP3 Assignment</em>: the business-idea deliverables, charter v1.0, feasibility analysis and the MVP wireframe, all submitted.</li>
+  <li><b>14 to 24 Jul 2026</b>New main board, the <a href="https://trello.com/b/fMkfGDiw/goldenway-board">Goldenway Board</a>: layout agreed and product backlog of 19 roadmap cards created. This is the board we submitted.</li>
+  <li><b>11 Aug 2026</b>Team makes GoldenWay a multirole app. Our Team Lead takes over Trello and manages the role-based work on an <a href="https://trello.com/b/xyZiSfZl/goldenway-board-updated">updated board</a>, with a backlog card of stories for each staff role.</li>
   <li><b>Aug to Sep 2026</b>I own the Driver slice of the new backlog (below).</li>
   <li><b>20 Oct 2026</b>Feature freeze: only bug fixes and documentation after this.</li>
 </ul>
@@ -291,8 +293,9 @@ The 19 blocks, ordered with MoSCoW priorities: project setup; auth (design, back
 </div>
 
 <div class="shots">
-  <figure class="shot"><img src="assets/img/agile/trello-board-v1.png" alt="Trello Board v1: User Stories, Product backlog with 19 roadmap cards, In Progress and Completed lists"><figcaption>Trello Board v1: the Product backlog list with the 19 roadmap cards. "A" is me.</figcaption></figure>
-  <figure class="shot"><img src="assets/img/agile/trello-board-v2.png" alt="Board v2, managed by the Team Lead after the multirole decision"><figcaption>Board v2, managed by the Team Lead</figcaption></figure>
+  <figure class="shot"><img src="assets/img/agile/trello-pfp3-board.png" alt="First Trello board, Group 26 PFP3 Assignment, with all seven semester 1 deliverables in Submitted"><figcaption>First board (PFP3, semester 1): all seven deliverables submitted</figcaption></figure>
+  <figure class="shot"><img src="assets/img/agile/trello-board-v1.png" alt="Goldenway Board: User Stories, Product backlog with 19 roadmap cards, In Progress and Completed lists"><figcaption>Goldenway Board, our main and submitted board: the Product backlog list with the 19 roadmap cards. "A" is me.</figcaption></figure>
+  <figure class="shot"><img src="assets/img/agile/trello-board-v2.png" alt="Updated board, managed by the Team Lead after the multirole decision"><figcaption>Updated board, managed by the Team Lead</figcaption></figure>
 </div>
 
 </div>
@@ -378,7 +381,7 @@ create policy vehicle_runs_insert on public.vehicle_runs
 
 This sprint did not go to plan. My driver work took longer than expected, and during the same week I had to help a teammate set up his inspector table. The sprint table shows it: three of the nine items (the login bug, the staff profile and the inspector help) were not Driver stories at all. Most of my commits landed between 16 and 18 September, right around the 17 September demo.
 
-Two lessons came out of that. First, a sprint backlog has to leave room for things you cannot see coming. Helping a teammate was the right call under our Ubuntu value, but because nobody planned for it, it squeezed my own work towards the deadline. Second, cross-role work is where estimates go wrong. Making a driver's delay reach the admin and the commuter was the hardest part, because it touched other people's parts of the system.
+Two lessons came out of that. First, a sprint backlog has to leave room for things you cannot see coming. Helping a teammate was the right call under our Ubuntu value, but because nobody planned for it, it squeezed my own work towards the deadline. Second, I underestimated the cross-role work. The driver screen was one task, but getting a delay to show up for admin and commuters touched parts of the app that other people owned.
 
 What worked was the time box itself. A one-week sprint with a fixed demo date forced me to decide what "done" meant for the Driver role, and to finish it instead of polishing one screen forever.
 
@@ -407,7 +410,7 @@ What worked was the time box itself. A one-week sprint with a fixed demo date fo
 
 <div class="panel" id="log-ev" role="tabpanel" markdown="1">
 
-An Agile logbook records stand-ups, sprint plans and retrospectives so a team can track progress and blockers over time. Each week below lists the evidence it is based on: Trello cards, commits in the GoldenWay repository and milestones in our charter.
+An Agile logbook records stand-ups, sprint plans and retrospectives so a team can track progress and blockers over time. I compiled this record from Trello cards, commits and merges in the GoldenWay repository, and milestones in our charter. Each week lists its evidence.
 
 <details markdown="1" open>
 <summary><code>Week 1 · 13 to 17 Jul</code> Board layout and the pitch</summary>
@@ -446,7 +449,7 @@ An Agile logbook records stand-ups, sprint plans and retrospectives so a team ca
 <summary><code>Week 5 · 11 to 14 Aug</code> Multirole decision: I take the Driver role</summary>
 
 - **Done:** team agreed to make GoldenWay a multirole app and designed the database schema (11 Aug).
-- **My part:** assigned the Driver role: starting runs, delay reporting, run timelines and on-time tracking. The Team Lead took over the Trello board from here (Board v2).
+- **My part:** assigned the Driver role: starting runs, delay reporting, run timelines and on-time tracking. The Team Lead took over running the Trello board from here.
 - **Next:** get the Driver role working against the real database.
 - **Evidence:** Charter section 3 and milestones.
 </details>
@@ -512,7 +515,7 @@ Tracking also shows the difference between **what** happened and **why**. Git an
 
 My commit messages taught me the same lesson. *"fix RLS privilege escalation on vehicle runs"* explains itself months later. *"pudate"* on 18 September tells nobody anything, and I had to open the files to see that it was the inspector work. Clear commit messages are a logbook too.
 
-This connects back to the charter's transparency value: blockers come up at stand-up and the board shows the real state of the work. When progress and blockers are logged, the team and the lecturer can see problems coming and help. In a workplace, that is the difference between a manager knowing a task is at risk on Tuesday and finding out on Friday.
+This connects back to the charter's transparency value: blockers come up at stand-up and the board shows the real state of the work. When progress and blockers are written down as they happen, the team can see a problem coming and help before the deadline instead of after it.
 
 **What I take forward:** log progress the same day in a short done, next, blocked format, spread my work across the sprint instead of bunching it near the demo, and write commit messages someone else can understand.
 
@@ -525,9 +528,9 @@ This connects back to the charter's transparency value: blockers come up at stan
 
 <h2 class="bar">What I take into the workplace</h2>
 
-The five artefacts tell one story. The **charter** set the rules (role ownership, RLS on every table, a logbook each). The **product backlog** I managed in July was replaced by a role-based one when the product changed. My **user stories** came from that backlog, and their tasks became my **sprint backlog** for the week of the September demo. The **logbook** shows where that sprint ran over, and why logging blockers early matters.
+The charter set the rules I worked under, the product backlog gave me the Driver stories, and those stories became my tasks in the September sprint. The logbook shows where that sprint ran over.
 
-The biggest lesson across all five: in a team project, the hard work sits between roles. What took the most effort was making a driver's report reach admin and commuters, keeping that path secure, and helping a teammate along the way. Agile tools such as stories, sprints, boards and logbooks matter most at exactly those points, because they keep everyone's work visible to everyone else.
+The main thing I'm taking with me: test my own work against the people it affects (the clerk who shouldn't be able to create a run, the commuter who needs to see the delay), and plan for the work that sits between roles, because that is where my estimates were wrong.
 
 </section>
 
