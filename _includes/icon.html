@@ -1,0 +1,29 @@
+{%- comment -%}
+  Inline SVG icons. Pages include this file with a name parameter, e.g. name="home".
+  Line icons on a 24px grid that inherit the text colour; an unknown name renders nothing.
+{%- endcomment -%}
+{%- case include.name -%}
+{%- when "home" -%}{%- assign d = '<path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/>' -%}
+{%- when "agile" -%}{%- assign d = '<path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/><path d="M9 12l2 2 4-4"/>' -%}
+{%- when "cv" -%}{%- assign d = '<rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="9" r="2.5"/><path d="M8.5 16a3.5 3.5 0 0 1 7 0"/>' -%}
+{%- when "video" -%}{%- assign d = '<rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3"/>' -%}
+{%- when "mail" -%}{%- assign d = '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>' -%}
+{%- when "github" -%}{%- assign d = '<path d="M9 19c-4 1.5-4-2-6-2.5"/><path d="M15 21v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12 12 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/>' -%}
+{%- when "linkedin" -%}{%- assign d = '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10v7"/><path d="M8 7v.01"/><path d="M12 17v-4a2 2 0 0 1 4 0v4"/><path d="M12 10v7"/>' -%}
+{%- when "globe" -%}{%- assign d = '<circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18"/>' -%}
+{%- when "code" -%}{%- assign d = '<path d="M8 8l-4 4 4 4"/><path d="M16 8l4 4-4 4"/><path d="M14 5l-4 14"/>' -%}
+{%- when "server" -%}{%- assign d = '<rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01"/><path d="M7 16.5h.01"/>' -%}
+{%- when "folder" -%}{%- assign d = '<path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>' -%}
+{%- when "bus" -%}{%- assign d = '<rect x="4" y="3" width="16" height="14" rx="3"/><path d="M4 10h16"/><path d="M7 17v3"/><path d="M17 17v3"/><path d="M8 14h.01"/><path d="M16 14h.01"/>' -%}
+{%- when "external" -%}{%- assign d = '<path d="M14 4h6v6"/><path d="M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/>' -%}
+{%- when "file" -%}{%- assign d = '<path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z"/><path d="M14 3v5h5"/><path d="M9 13h6"/><path d="M9 17h6"/>' -%}
+{%- when "kanban" -%}{%- assign d = '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 7v7"/><path d="M12 7v4"/><path d="M16 7v9"/>' -%}
+{%- when "users" -%}{%- assign d = '<circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0"/><path d="M16 5a3 3 0 0 1 0 6"/><path d="M18 14a6 6 0 0 1 3 6"/>' -%}
+{%- when "story" -%}{%- assign d = '<path d="M4 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4z"/><path d="M8 8h8"/><path d="M8 12h5"/>' -%}
+{%- when "sprint" -%}{%- assign d = '<path d="M13 2L4 14h7l-1 8 9-12h-7z"/>' -%}
+{%- when "book" -%}{%- assign d = '<path d="M4 5a2 2 0 0 1 2-2h14v16H6a2 2 0 0 0-2 2z"/><path d="M4 19a2 2 0 0 1 2-2h14"/><path d="M9 7h6"/>' -%}
+{%- when "pen" -%}{%- assign d = '<path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13.5 6.5l4 4"/>' -%}
+{%- when "terminal" -%}{%- assign d = '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9l3 3-3 3"/><path d="M12 15h5"/>' -%}
+{%- else -%}{%- assign d = '' -%}
+{%- endcase -%}
+{%- if d != '' -%}<svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">{{ d }}</svg>{%- endif -%}

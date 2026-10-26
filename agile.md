@@ -11,28 +11,34 @@ description: Agile e-portfolio for PRP370 (Project Presentation 3), built around
 GoldenWay is a web app our team (Group 26) built so Golden Arrow commuters can buy and load Gold Card trips online, with tools for five staff roles. I was the **developer on the Driver role**, and in July I was **in charge of our first Trello board and product backlog**. This page follows the route through the five Agile artefacts. Each stop shows the evidence first, then my reflection on it.
 {: .lead}
 
-<div class="facts">
-  <div class="fact"><b>3</b><span>Driver user stories delivered</span></div>
-  <div class="fact"><b>1,790</b><span>lines of code added across 15 files</span></div>
-  <div class="fact"><b>6</b><span>database migrations I wrote</span></div>
-  <div class="fact"><b>4</b><span>pull request merges of my branch</span></div>
-  <div class="fact"><b>1</b><span>security hole found and fixed</span></div>
+<div class="term">
+  <div class="term__bar"><i></i><i></i><i></i><span>~/goldenway</span></div>
+  <div class="term__body">
+    <p class="term__cmd"><span class="prompt">$</span> git log --author="Aidan" --shortstat</p>
+    <dl class="stats">
+      <div><dt>3</dt><dd>Driver user stories delivered</dd></div>
+      <div><dt>1,790</dt><dd>lines of code added across 15 files</dd></div>
+      <div><dt>6</dt><dd>database migrations I wrote</dd></div>
+      <div><dt>4</dt><dd>pull request merges of my branch</dd></div>
+      <div><dt>1</dt><dd>security hole found and fixed</dd></div>
+    </dl>
+  </div>
 </div>
 
 <div class="actions">
-  <a class="btn" href="https://trello.com/b/fMkfGDiw/goldenway-board">Open our Trello board</a>
-  <a class="btn btn--ghost" href="https://github.com/aidan-g-barends/GoldenWayApp">GoldenWay repository</a>
-  <a class="btn btn--ghost" href="https://goldenwayapp.vercel.app/">Live app</a>
+  <a class="btn" href="https://trello.com/b/fMkfGDiw/goldenway-board">{% include icon.html name="kanban" %}Open our Trello board</a>
+  <a class="btn btn--ghost" href="https://github.com/aidan-g-barends/GoldenWayApp">{% include icon.html name="github" %}GoldenWay repository</a>
+  <a class="btn btn--ghost" href="https://goldenwayapp.vercel.app/">{% include icon.html name="external" %}Live app</a>
 </div>
 
 <nav class="route" aria-label="Artefacts on this page">
   <div class="route__label"><span>Route: charter to logbook</span><span>5 stops</span></div>
   <div class="route__line">
-    <a href="#charter"><i></i>Team Charter</a>
-    <a href="#stories"><i></i>User Stories</a>
-    <a href="#product-backlog"><i></i>Product Backlog</a>
-    <a href="#sprint-backlog"><i></i>Sprint Backlog</a>
-    <a href="#logbook"><i></i>Logbook</a>
+    <a href="#charter"><i>{% include icon.html name="users" %}</i>Team Charter</a>
+    <a href="#stories"><i>{% include icon.html name="story" %}</i>User Stories</a>
+    <a href="#product-backlog"><i>{% include icon.html name="kanban" %}</i>Product Backlog</a>
+    <a href="#sprint-backlog"><i>{% include icon.html name="sprint" %}</i>Sprint Backlog</a>
+    <a href="#logbook"><i>{% include icon.html name="book" %}</i>Logbook</a>
   </div>
 </nav>
 
@@ -40,8 +46,9 @@ GoldenWay is a web app our team (Group 26) built so Golden Arrow commuters can b
 <section class="stop" id="charter" markdown="1">
 
 <div class="stop__head">
-  <span class="stop__num">1</span>
+  <span class="stop__icon">{% include icon.html name="users" %}</span>
   <div>
+    <span class="stop__idx">01 / 05 · team-charter.md</span>
     <h2>Agile Team Charter</h2>
     <p>Our team agreement: purpose, values, working agreements and boundaries. Version 1.0 was written in May 2026 and updated to version 2.0 on 20 October 2026 after the team changed.</p>
   </div>
@@ -49,8 +56,8 @@ GoldenWay is a web app our team (Group 26) built so Golden Arrow commuters can b
 
 <div data-tabs markdown="1">
 <div class="tabs" role="tablist">
-  <button type="button" role="tab" aria-selected="true" aria-controls="charter-ev">Evidence</button>
-  <button type="button" role="tab" aria-selected="false" aria-controls="charter-re">Reflection</button>
+  <button type="button" role="tab" aria-selected="true" aria-controls="charter-ev">{% include icon.html name="file" %}evidence.md</button>
+  <button type="button" role="tab" aria-selected="false" aria-controls="charter-re">{% include icon.html name="pen" %}reflection.md</button>
 </div>
 
 <div class="panel" id="charter-ev" role="tabpanel" markdown="1">
@@ -107,7 +114,7 @@ An Agile team charter is a living, co-created agreement that sets out a team's p
 </div>
 
 <div class="actions">
-  <a class="btn" href="assets/docs/Agile_Team_Charter_v2.0.pdf">Charter v2.0 (PDF)</a>
+  <a class="btn" href="assets/docs/Agile_Team_Charter_v2.0.pdf">{% include icon.html name="file" %}Charter v2.0 (PDF)</a>
 </div>
 
 </div>
@@ -132,8 +139,9 @@ The second was **Ubuntu: if someone is stuck, help them before moving on to your
 <section class="stop" id="stories" markdown="1">
 
 <div class="stop__head">
-  <span class="stop__num">2</span>
+  <span class="stop__icon">{% include icon.html name="story" %}</span>
   <div>
+    <span class="stop__idx">02 / 05 · user-stories.md</span>
     <h2>User Stories and Tasks</h2>
     <p>The three Driver stories I owned, written from the driver's point of view, each broken into tasks I can link to a commit.</p>
   </div>
@@ -141,8 +149,8 @@ The second was **Ubuntu: if someone is stuck, help them before moving on to your
 
 <div data-tabs markdown="1">
 <div class="tabs" role="tablist">
-  <button type="button" role="tab" aria-selected="true" aria-controls="stories-ev">Evidence</button>
-  <button type="button" role="tab" aria-selected="false" aria-controls="stories-re">Reflection</button>
+  <button type="button" role="tab" aria-selected="true" aria-controls="stories-ev">{% include icon.html name="file" %}evidence.md</button>
+  <button type="button" role="tab" aria-selected="false" aria-controls="stories-re">{% include icon.html name="pen" %}reflection.md</button>
 </div>
 
 <div class="panel" id="stories-ev" role="tabpanel" markdown="1">
@@ -236,8 +244,9 @@ Writing acceptance criteria for this page showed me what was missing during the 
 <section class="stop" id="product-backlog" markdown="1">
 
 <div class="stop__head">
-  <span class="stop__num">3</span>
+  <span class="stop__icon">{% include icon.html name="kanban" %}</span>
   <div>
+    <span class="stop__idx">03 / 05 · product-backlog.md</span>
     <h2>Product Backlog</h2>
     <p>Everything GoldenWay needed, in priority order. The first version lived on the board I managed in July; it was rebuilt around roles in August.</p>
   </div>
@@ -245,8 +254,8 @@ Writing acceptance criteria for this page showed me what was missing during the 
 
 <div data-tabs markdown="1">
 <div class="tabs" role="tablist">
-  <button type="button" role="tab" aria-selected="true" aria-controls="pb-ev">Evidence</button>
-  <button type="button" role="tab" aria-selected="false" aria-controls="pb-re">Reflection</button>
+  <button type="button" role="tab" aria-selected="true" aria-controls="pb-ev">{% include icon.html name="file" %}evidence.md</button>
+  <button type="button" role="tab" aria-selected="false" aria-controls="pb-re">{% include icon.html name="pen" %}reflection.md</button>
 </div>
 
 <div class="panel" id="pb-ev" role="tabpanel" markdown="1">
@@ -320,8 +329,9 @@ The backlog had to change, and it did. When the Team Lead took over the board an
 <section class="stop" id="sprint-backlog" markdown="1">
 
 <div class="stop__head">
-  <span class="stop__num">4</span>
+  <span class="stop__icon">{% include icon.html name="sprint" %}</span>
   <div>
+    <span class="stop__idx">04 / 05 · sprint-backlog.md</span>
     <h2>Sprint Backlog</h2>
     <p>What I committed to in my main delivery sprint, the week of the 17 September integration demo, and what actually happened.</p>
   </div>
@@ -329,8 +339,8 @@ The backlog had to change, and it did. When the Team Lead took over the board an
 
 <div data-tabs markdown="1">
 <div class="tabs" role="tablist">
-  <button type="button" role="tab" aria-selected="true" aria-controls="sb-ev">Evidence</button>
-  <button type="button" role="tab" aria-selected="false" aria-controls="sb-re">Reflection</button>
+  <button type="button" role="tab" aria-selected="true" aria-controls="sb-ev">{% include icon.html name="file" %}evidence.md</button>
+  <button type="button" role="tab" aria-selected="false" aria-controls="sb-re">{% include icon.html name="pen" %}reflection.md</button>
 </div>
 
 <div class="panel" id="sb-ev" role="tabpanel" markdown="1">
@@ -395,8 +405,9 @@ What worked was the time box itself. A one-week sprint with a fixed demo date fo
 <section class="stop" id="logbook" markdown="1">
 
 <div class="stop__head">
-  <span class="stop__num">5</span>
+  <span class="stop__icon">{% include icon.html name="book" %}</span>
   <div>
+    <span class="stop__idx">05 / 05 · logbook.md</span>
     <h2>Agile Logbook</h2>
     <p>My week-by-week record of the project, in the stand-up shape our charter uses: what was done, my part, what came next and what blocked me.</p>
   </div>
@@ -404,8 +415,8 @@ What worked was the time box itself. A one-week sprint with a fixed demo date fo
 
 <div data-tabs markdown="1">
 <div class="tabs" role="tablist">
-  <button type="button" role="tab" aria-selected="true" aria-controls="log-ev">Evidence</button>
-  <button type="button" role="tab" aria-selected="false" aria-controls="log-re">Reflection</button>
+  <button type="button" role="tab" aria-selected="true" aria-controls="log-ev">{% include icon.html name="file" %}evidence.md</button>
+  <button type="button" role="tab" aria-selected="false" aria-controls="log-re">{% include icon.html name="pen" %}reflection.md</button>
 </div>
 
 <div class="panel" id="log-ev" role="tabpanel" markdown="1">
@@ -526,7 +537,7 @@ This connects back to the charter's transparency value: blockers come up at stan
 <!-- =================================================================== -->
 <section class="stop" id="connect" markdown="1">
 
-<h2 class="bar">What I take into the workplace</h2>
+<h2 class="bar">{% include icon.html name="terminal" %}What I take into the workplace</h2>
 
 The charter set the rules I worked under, the product backlog gave me the Driver stories, and those stories became my tasks in the September sprint. The logbook shows where that sprint ran over.
 
@@ -536,7 +547,7 @@ The main thing I'm taking with me: test my own work against the people it affect
 
 <section class="stop refs" id="references" markdown="1">
 
-<h2 class="bar">References</h2>
+<h2 class="bar">{% include icon.html name="book" %}References</h2>
 
 Beck, K. et al. (2001) *Manifesto for Agile Software Development*. Available at: [https://agilemanifesto.org/](https://agilemanifesto.org/) (Accessed: 26 October 2026).
 

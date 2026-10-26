@@ -14,7 +14,7 @@ Aidan Barends · [aidanbarends95@gmail.com](mailto:aidanbarends95@gmail.com) · 
 <div class="cols" markdown="1">
 <div markdown="1">
 
-<h2 class="bar">Education</h2>
+<h2 class="bar">{% include icon.html name="book" %}Education</h2>
 
 <div class="card" markdown="1">
 **Diploma in ICT: Application Development**<br>
@@ -26,7 +26,7 @@ Aidan Barends · [aidanbarends95@gmail.com](mailto:aidanbarends95@gmail.com) · 
 <span class="mono muted">Hopefield High School · 2018 to 2022</span>
 </div>
 
-<h2 class="bar" style="margin-top:32px">Experience</h2>
+<h2 class="bar" style="margin-top:32px">{% include icon.html name="server" %}Experience</h2>
 
 <div class="card" markdown="1">
 **IT Intern, Craythorne IT**<br>
@@ -40,7 +40,7 @@ Aidan Barends · [aidanbarends95@gmail.com](mailto:aidanbarends95@gmail.com) · 
 </div>
 <div markdown="1">
 
-<h2 class="bar">Skills</h2>
+<h2 class="bar">{% include icon.html name="code" %}Skills</h2>
 
 <div class="card" markdown="1">
 #### Frontend
@@ -62,7 +62,7 @@ Router configuration, Wi-Fi and mesh setup, cabling, hardware troubleshooting
 Git and GitHub, VS Code, IntelliJ, NetBeans, MySQL Workbench, Figma
 </div>
 
-<h2 class="bar" style="margin-top:32px">Contact</h2>
+<h2 class="bar" style="margin-top:32px">{% include icon.html name="mail" %}Contact</h2>
 
 <div class="card" markdown="1">
 - Email: [aidanbarends95@gmail.com](mailto:aidanbarends95@gmail.com)

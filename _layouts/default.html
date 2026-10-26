@@ -22,7 +22,7 @@
     <aside class="side" aria-label="Profile and navigation">
       <div class="side__inner">
         <a class="side__brand" href="{{ '/' | relative_url }}">
-          <span class="side__mark">AB</span>
+          <span class="side__mark"><span class="side__caret">&gt;</span>AB<span class="side__cursor"></span></span>
           <span class="side__name">Aidan Barends</span>
           <span class="side__role">Application Development · CPUT</span>
           <span class="side__status"><i></i>Open to junior roles</span>
@@ -32,16 +32,17 @@
         </button>
         <nav id="sidenav" class="side__nav" aria-label="Main">
           <!-- page.nav is set in each page's front matter, so the current page is highlighted -->
-          <a href="{{ '/' | relative_url }}" {% if page.nav == 'home' %}aria-current="page"{% endif %}><span>~/</span>Home</a>
-          <a href="{{ '/agile.html' | relative_url }}" {% if page.nav == 'agile' %}aria-current="page"{% endif %}><span>~/</span>Agile eWIL</a>
-          <a href="{{ '/cv.html' | relative_url }}" {% if page.nav == 'cv' %}aria-current="page"{% endif %}><span>~/</span>Curriculum Vitae</a>
-          <a href="{{ '/interview.html' | relative_url }}" {% if page.nav == 'interview' %}aria-current="page"{% endif %}><span>~/</span>Mock Interview</a>
+          <span class="side__label">~/portfolio</span>
+          <a href="{{ '/' | relative_url }}" {% if page.nav == 'home' %}aria-current="page"{% endif %}>{% include icon.html name="home" %}Home</a>
+          <a href="{{ '/agile.html' | relative_url }}" {% if page.nav == 'agile' %}aria-current="page"{% endif %}>{% include icon.html name="agile" %}Agile eWIL</a>
+          <a href="{{ '/cv.html' | relative_url }}" {% if page.nav == 'cv' %}aria-current="page"{% endif %}>{% include icon.html name="cv" %}Curriculum Vitae</a>
+          <a href="{{ '/interview.html' | relative_url }}" {% if page.nav == 'interview' %}aria-current="page"{% endif %}>{% include icon.html name="video" %}Mock Interview</a>
         </nav>
         <ul class="side__contact">
-          <li><a href="mailto:aidanbarends95@gmail.com">aidanbarends95@gmail.com</a></li>
-          <li><a href="https://github.com/AidanBarends">github.com/AidanBarends</a></li>
-          <li><a href="https://www.linkedin.com/in/aidan-barends/">linkedin.com/in/aidan-barends</a></li>
-          <li><a href="https://aidan-barends.vercel.app/">aidan-barends.vercel.app</a></li>
+          <li><a href="mailto:aidanbarends95@gmail.com">{% include icon.html name="mail" %}aidanbarends95@gmail.com</a></li>
+          <li><a href="https://github.com/AidanBarends">{% include icon.html name="github" %}github.com/AidanBarends</a></li>
+          <li><a href="https://www.linkedin.com/in/aidan-barends/">{% include icon.html name="linkedin" %}linkedin.com/in/aidan-barends</a></li>
+          <li><a href="https://aidan-barends.vercel.app/">{% include icon.html name="globe" %}aidan-barends.vercel.app</a></li>
         </ul>
         <button class="theme-toggle" type="button" aria-label="Toggle light / dark theme">
           <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg>
