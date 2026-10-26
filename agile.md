@@ -277,7 +277,7 @@ The 19 blocks, ordered with MoSCoW priorities: project setup; auth (design, back
 <ul class="timeline">
   <li><b>Mar to May 2026 · PFP3</b>First board, <em>Group 26: PFP3 Assignment</em>: the business-idea deliverables, charter v1.0, feasibility analysis and the MVP wireframe, all submitted.</li>
   <li><b>14 to 24 Jul 2026</b>New main board, the <a href="https://trello.com/b/fMkfGDiw/goldenway-board">Goldenway Board</a>: layout agreed and product backlog of 19 roadmap cards created. This is the board we submitted.</li>
-  <li><b>11 Aug 2026</b>Team makes GoldenWay a multirole app. Our Team Lead takes over Trello and manages the role-based work on an <a href="https://trello.com/b/xyZiSfZl/goldenway-board-updated">updated board</a>, with a backlog card of stories for each staff role.</li>
+  <li><b>11 Aug 2026</b>Team makes GoldenWay a multirole app. Our Team Lead takes over running the Goldenway Board, with a backlog card of stories for each staff role.</li>
   <li><b>Aug to Sep 2026</b>I own the Driver slice of the new backlog (below).</li>
   <li><b>20 Oct 2026</b>Feature freeze: only bug fixes and documentation after this.</li>
 </ul>
@@ -296,7 +296,6 @@ The 19 blocks, ordered with MoSCoW priorities: project setup; auth (design, back
 <div class="shots">
   <figure class="shot"><img src="assets/img/agile/trello-pfp3-board.png" alt="First Trello board, Group 26 PFP3 Assignment, with all seven semester 1 deliverables in Submitted"><figcaption>First board (PFP3, semester 1): all seven deliverables submitted</figcaption></figure>
   <figure class="shot"><img src="assets/img/agile/trello-goldenway-board.png" alt="Goldenway Board: User Stories, Product backlog with 19 roadmap cards, In Progress and Completed lists"><figcaption>Goldenway Board, our main and submitted board: the Product backlog list with the 19 roadmap cards. "A" is me.</figcaption></figure>
-  <figure class="shot"><img src="assets/img/agile/trello-updated-board.png" alt="Updated board, managed by the Team Lead after the multirole decision"><figcaption>Updated board, managed by the Team Lead</figcaption></figure>
 </div>
 
 </div>
@@ -372,7 +371,7 @@ create policy vehicle_runs_insert on public.vehicle_runs
 <span class="muted">From migration <code>0012a_driver_hardening.sql</code>, commit <a href="https://github.com/aidan-g-barends/GoldenWayApp/commit/488e060">488e060</a>.</span>
 
 <div class="shots">
-  <figure class="shot"><img src="assets/img/agile/admin-alerts.png" alt="Admin alerts screen showing a driver delay"><figcaption>Admin alerts screen receiving a driver delay report</figcaption></figure>
+  <figure class="shot"><img src="assets/img/agile/admin-alerts.png" alt="Admin alerts screen showing a driver delay"><figcaption>Admin "Service alerts" screen: a delay alert on route MP-CPT that commuters are notified about</figcaption></figure>
 </div>
 
 </div>
@@ -491,11 +490,19 @@ An Agile logbook records stand-ups, sprint plans and retrospectives so a team ca
 </details>
 
 <details markdown="1">
-<summary><code>Week 10 · 19 to 20 Oct</code> Feature freeze</summary>
+<summary><code>Week 10 · 19 to 23 Oct</code> Feature freeze and presentation prep</summary>
 
-- **Done (team):** code review fixes, feature freeze declared, charter updated to v2.0.
-- **Next:** individual portfolios due 27 Oct.
+- **Done (team):** code review fixes, feature freeze declared (20 Oct), charter updated to v2.0.
+- **Done (team, me included):** prepared the presentation of GoldenWay for our lecturer.
+- **Next:** present to the lecturer and submit individual portfolios.
 - **Evidence:** Charter revision history and milestones.
+</details>
+
+<details markdown="1">
+<summary><code>Week 11 · 26 to 30 Oct</code> Presenting to our lecturer</summary>
+
+- **Planned:** present GoldenWay to our lecturer this week; individual portfolios due 27 Oct.
+- **Evidence:** Charter milestones.
 </details>
 
 ### Retrospective: my Week 7 sprint
