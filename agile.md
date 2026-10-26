@@ -22,6 +22,7 @@ GoldenWay is a web app our team (Group 26) built so Golden Arrow commuters can b
 <div class="actions">
   <a class="btn" href="https://trello.com/b/fMkfGDiw/goldenway-board">Open Trello Board v1</a>
   <a class="btn btn--ghost" href="https://github.com/aidan-g-barends/GoldenWayApp">GoldenWay repository</a>
+  <a class="btn btn--ghost" href="https://goldenwayapp.vercel.app/">Live app</a>
 </div>
 
 <nav class="route" aria-label="Artefacts on this page">
