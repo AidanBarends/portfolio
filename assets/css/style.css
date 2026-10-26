@@ -1,0 +1,179 @@
+/* =========================================================
+   Aidan Barends portfolio theme
+   Dark by default to match aidan-barends.vercel.app (#0B0F14),
+   with a light theme behind the toggle.
+   ========================================================= */
+
+:root {
+  --bg: #0B0F14;
+  --surface: #111821;
+  --surface-2: #16202B;
+  --border: #223041;
+  --text: #E6EDF3;
+  --muted: #93A1B0;
+  --accent: #34D399;      /* terminal green */
+  --accent-2: #60A5FA;    /* link blue */
+  --warn: #FBBF24;
+  --must: #F87171;
+  --should: #FBBF24;
+  --could: #60A5FA;
+  --radius: 14px;
+  --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Light theme: used when the toggle sets data-theme="light" */
+:root[data-theme="light"] {
+  --bg: #F7F9FB;
+  --surface: #FFFFFF;
+  --surface-2: #EEF2F6;
+  --border: #D6DEE6;
+  --text: #0F1720;
+  --muted: #526170;
+  --accent: #059669;
+  --accent-2: #2563EB;
+  --warn: #B45309;
+  --must: #DC2626;
+  --should: #B45309;
+  --could: #2563EB;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.7 var(--sans);
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--accent-2); text-underline-offset: 3px; }
+a:hover { color: var(--accent); }
+
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 16px; top: 16px; background: var(--surface); padding: 8px 12px; z-index: 99; }
+
+/* ---------- Nav ---------- */
+.nav {
+  position: sticky; top: 0; z-index: 50;
+  background: color-mix(in srgb, var(--bg) 85%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+.nav__inner {
+  max-width: 1040px; margin: 0 auto; padding: 12px 16px;
+  display: flex; align-items: center; gap: 16px;
+}
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text); font-weight: 700; }
+.brand__mark {
+  display: grid; place-items: center; width: 34px; height: 34px; border-radius: 9px;
+  background: var(--accent); color: #04110B; font: 700 14px var(--mono);
+}
+.nav__links { display: flex; gap: 4px; margin-left: auto; flex-wrap: wrap; }
+.nav__links a {
+  color: var(--muted); text-decoration: none; padding: 6px 10px; border-radius: 8px; font-size: 14px;
+}
+.nav__links a:hover, .nav__links a.is-active { color: var(--text); background: var(--surface-2); }
+.theme-toggle {
+  background: var(--surface); color: var(--text); border: 1px solid var(--border);
+  width: 36px; height: 36px; border-radius: 9px; cursor: pointer; display: grid; place-items: center;
+}
+@media (max-width: 560px) {
+  .brand__name { display: none; }
+  .nav__links a { padding: 6px 8px; font-size: 13px; }
+}
+
+/* ---------- Page and typography ---------- */
+.page { max-width: 1040px; margin: 0 auto; padding: 32px 16px 64px; }
+
+h1, h2, h3, h4 { line-height: 1.25; letter-spacing: -0.02em; }
+h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; margin: 0.4em 0 0.3em; }
+h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2rem); font-weight: 800;
+  margin: 2.4em 0 0.6em; padding-top: 0.6em; border-top: 1px solid var(--border);
+}
+h3 { font-size: 1.2rem; margin: 1.8em 0 0.5em; }
+h4 { font-size: 1rem; margin: 1.4em 0 0.4em; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+p, li { color: var(--text); }
+hr { border: 0; border-top: 1px solid var(--border); margin: 2.5em 0; }
+strong { font-weight: 700; }
+code { font: 0.88em var(--mono); background: var(--surface-2); padding: 2px 6px; border-radius: 6px; }
+
+/* Terminal-style eyebrow label above section headings, e.g. "01 / Team charter" */
+.eyebrow {
+  font: 600 13px var(--mono); color: var(--accent);
+  margin: 3em 0 0; letter-spacing: 0.04em;
+}
+.eyebrow + h2 { border-top: 0; margin-top: 0.2em; padding-top: 0; }
+blockquote { margin: 0.8em 0; padding: 10px 18px; border-left: 3px solid var(--accent); background: var(--surface-2); border-radius: 8px; font-size: 1.05rem; }
+blockquote p { margin: 0; }
+.prompt { font-family: var(--mono); color: var(--accent); }
+.lead { font-size: 1.12rem; color: var(--muted); max-width: 70ch; }
+
+/* ---------- Jump grid (the 5 assessed sections) ---------- */
+.jump { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin: 1.5em 0; }
+.jump a {
+  display: block; text-decoration: none; color: var(--text);
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 14px 16px; transition: border-color .15s, transform .15s;
+}
+.jump a:hover { border-color: var(--accent); transform: translateY(-2px); }
+.jump b { display: block; font: 600 12px var(--mono); color: var(--accent); }
+.jump span { font-weight: 700; }
+
+/* ---------- Evidence and reflection panels ---------- */
+.evidence, .reflection, .note {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 4px 22px 18px; margin: 1.2em 0;
+}
+.evidence { border-left: 4px solid var(--accent-2); }
+.reflection { border-left: 4px solid var(--accent); }
+.note { border-left: 4px solid var(--warn); background: var(--surface-2); }
+.evidence > h3:first-child, .reflection > h3:first-child, .note > p:first-child { margin-top: 18px; }
+.evidence > h3:first-child::before { content: "EVIDENCE  "; font: 600 12px var(--mono); color: var(--accent-2); }
+.reflection > h3:first-child::before { content: "REFLECTION  "; font: 600 12px var(--mono); color: var(--accent); }
+
+/* ---------- Tables ---------- */
+table {
+  width: 100%; border-collapse: collapse; margin: 1em 0; font-size: 0.93rem;
+  display: block; overflow-x: auto;   /* scroll inside the table on small phones, not the whole page */
+}
+thead th { text-align: left; background: var(--surface-2); color: var(--muted); font-weight: 600; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.04em; }
+th, td { padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+tbody tr:hover { background: var(--surface-2); }
+
+/* ---------- Badges (written inline as <span class="tag must">Must</span>) ---------- */
+.tag { display: inline-block; font: 600 11px var(--mono); padding: 2px 8px; border-radius: 99px; border: 1px solid currentColor; white-space: nowrap; }
+.tag.must { color: var(--must); }
+.tag.should { color: var(--should); }
+.tag.could { color: var(--could); }
+.tag.done { color: var(--accent); }
+.tag.team { color: var(--muted); }
+
+/* ---------- Screenshots ---------- */
+.shot { margin: 1.2em 0; }
+.shot img { border: 1px solid var(--border); border-radius: 10px; }
+.shot em { display: block; color: var(--muted); font-size: 0.88rem; margin-top: 6px; }
+
+/* ---------- Logbook entries (<details>) ---------- */
+details {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+  padding: 0 18px; margin: 10px 0;
+}
+details[open] { padding-bottom: 12px; }
+summary { cursor: pointer; padding: 14px 0; font-weight: 600; list-style: none; }
+summary::-webkit-details-marker { display: none; }
+summary::before { content: "+ "; font-family: var(--mono); color: var(--accent); }
+details[open] summary::before { content: "− "; }
+summary code { margin-right: 8px; }
+
+/* ---------- Home page bits ---------- */
+.cta { display: inline-block; background: var(--accent); color: #04110B !important; font-weight: 700; text-decoration: none; padding: 10px 18px; border-radius: 10px; }
+.cta:hover { filter: brightness(1.08); }
+iframe { max-width: 100%; border-radius: 12px; border: 1px solid var(--border); }
+
+/* ---------- Footer ---------- */
+.footer { border-top: 1px solid var(--border); text-align: center; padding: 24px 16px; color: var(--muted); font-size: 14px; }
+
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
