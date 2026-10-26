@@ -294,8 +294,8 @@ The 19 blocks, ordered with MoSCoW priorities: project setup; auth (design, back
 
 <div class="shots">
   <figure class="shot"><img src="assets/img/agile/trello-pfp3-board.png" alt="First Trello board, Group 26 PFP3 Assignment, with all seven semester 1 deliverables in Submitted"><figcaption>First board (PFP3, semester 1): all seven deliverables submitted</figcaption></figure>
-  <figure class="shot"><img src="assets/img/agile/trello-board-v1.png" alt="Goldenway Board: User Stories, Product backlog with 19 roadmap cards, In Progress and Completed lists"><figcaption>Goldenway Board, our main and submitted board: the Product backlog list with the 19 roadmap cards. "A" is me.</figcaption></figure>
-  <figure class="shot"><img src="assets/img/agile/trello-board-v2.png" alt="Updated board, managed by the Team Lead after the multirole decision"><figcaption>Updated board, managed by the Team Lead</figcaption></figure>
+  <figure class="shot"><img src="assets/img/agile/trello-goldenway-board.png" alt="Goldenway Board: User Stories, Product backlog with 19 roadmap cards, In Progress and Completed lists"><figcaption>Goldenway Board, our main and submitted board: the Product backlog list with the 19 roadmap cards. "A" is me.</figcaption></figure>
+  <figure class="shot"><img src="assets/img/agile/trello-updated-board.png" alt="Updated board, managed by the Team Lead after the multirole decision"><figcaption>Updated board, managed by the Team Lead</figcaption></figure>
 </div>
 
 </div>
