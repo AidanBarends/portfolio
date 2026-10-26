@@ -22,17 +22,16 @@
     <aside class="side" aria-label="Profile and navigation">
       <div class="side__inner">
         <a class="side__brand" href="{{ '/' | relative_url }}">
-          <span class="side__mark"><span class="side__caret">&gt;</span>AB<span class="side__cursor"></span></span>
+          <span class="side__mark">AB</span>
           <span class="side__name">Aidan Barends</span>
           <span class="side__role">Application Development · CPUT</span>
-          <span class="side__status"><i></i>Open to junior roles</span>
+          <span class="side__status">Open to junior roles</span>
         </a>
         <button class="side__toggle" type="button" aria-expanded="false" aria-controls="sidenav">
           <span class="side__bars" aria-hidden="true"></span><span class="sr">Menu</span>
         </button>
         <nav id="sidenav" class="side__nav" aria-label="Main">
           <!-- page.nav is set in each page's front matter, so the current page is highlighted -->
-          <span class="side__label">~/portfolio</span>
           <a href="{{ '/' | relative_url }}" {% if page.nav == 'home' %}aria-current="page"{% endif %}>{% include icon.html name="home" %}Home</a>
           <a href="{{ '/agile.html' | relative_url }}" {% if page.nav == 'agile' %}aria-current="page"{% endif %}>{% include icon.html name="agile" %}Agile eWIL</a>
           <a href="{{ '/cv.html' | relative_url }}" {% if page.nav == 'cv' %}aria-current="page"{% endif %}>{% include icon.html name="cv" %}Curriculum Vitae</a>
