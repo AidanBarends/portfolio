@@ -16,6 +16,7 @@ This portfolio showcases my technical skills, work experience, and development a
 - Interests: Web Development, Cybersecurity, Networking  
 - Currently Learning: React, Laravel, PHP  
 
+<a class="cta" href="agile.html">View my Agile e-Portfolio (PRP370) →</a>
 ---
 
 ## Curriculum Vitae (CV)
