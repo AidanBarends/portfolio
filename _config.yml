@@ -1,0 +1,23 @@
+# Site settings for GitHub Pages (Jekyll)
+title: Aidan Barends
+description: Digital portfolio and Agile e-portfolio of Aidan Barends, Application Development student at CPUT.
+author: Aidan Barends
+baseurl: "/portfolio"
+url: "https://aidanbarends.github.io"
+
+# Kramdown with GitHub-flavoured Markdown, same as GitHub Pages default
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Every Markdown page uses _layouts/default.html unless it says otherwise
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+# Keep the big video file out of the site build
+exclude:
+  - "Video interview (2).mp4"
