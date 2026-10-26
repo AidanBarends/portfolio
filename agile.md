@@ -206,7 +206,7 @@ I wrote the acceptance criteria for this page from how each feature was built an
 </div>
 
 <div class="shots">
-  <figure class="shot"><img src="assets/img/agile/driver-runs.png" alt="Driver Runs screen in GoldenWay"><figcaption>Driver Runs screen: start run, pre-trip note, delays and the run timeline</figcaption></figure>
+  <figure class="shot"><img src="assets/img/agile/driver-runs.png" alt="Driver Runs screen in GoldenWay"><figcaption>Driver "My runs" screen: active run, status buttons (on time, +10, +20, breakdown, end run), today's schedule and recent runs</figcaption></figure>
 </div>
 
 The repository's history starts on 16 September 2026 with a combined import of the app, so the tables only link commits recorded under my name.
@@ -290,7 +290,7 @@ The 19 blocks, ordered with MoSCoW priorities: project setup; auth (design, back
 </div>
 
 <div class="shots">
-  <figure class="shot"><img src="assets/img/agile/trello-board-v1.png" alt="Board v1 rendered from its Trello data: the product backlog list holds the 19 roadmap cards; the green A is me"><figcaption>Board v1, rendered from its Trello data (26 Oct 2026). Green "A" = me.</figcaption></figure>
+  <figure class="shot"><img src="assets/img/agile/trello-board-v1.png" alt="Trello Board v1: User Stories, Product backlog with 19 roadmap cards, In Progress and Completed lists"><figcaption>Trello Board v1: the Product backlog list with the 19 roadmap cards. "A" is me.</figcaption></figure>
   <figure class="shot"><img src="assets/img/agile/trello-board-v2.png" alt="Board v2, managed by the Team Lead after the multirole decision"><figcaption>Board v2, managed by the Team Lead</figcaption></figure>
 </div>
 
